@@ -35,3 +35,26 @@ FormularioScreen formularioSolicitud({
   );
 }
 
+/// Fila de una solicitud en las listas.
+RecordTile filaSolicitud(Json s, {VoidCallback? onTap, bool mostrarEmpleado = true}) {
+  final color = switch (s.str('estado')) {
+    'aprobado' => NomiColors.emerald,
+    'rechazado' => NomiColors.red,
+    _ => NomiColors.amber,
+  };
+  final rango = s.str('fecha_inicial') == s.str('fecha_final')
+      ? fechaCorta(s.str('fecha_inicial'))
+      : '${fechaCorta(s.str('fecha_inicial'))} - ${fechaCorta(s.str('fecha_final'))}';
+  return RecordTile(
+    title: mostrarEmpleado ? s.str('empleado') : s.str('tipo_nombre'),
+    subtitle: [
+      if (mostrarEmpleado) s.str('tipo_nombre'),
+      rango,
+      '${s.str('dias')} día(s) hábil(es)',
+      if (s['comentario_resolucion'] != null) 'RH: ${s.str('comentario_resolucion')}',
+    ].join(' · '),
+    accent: color,
+    trailing: StatusBadge.solicitud(s.str('estado')),
+    onTap: onTap,
+  );
+}
