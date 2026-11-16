@@ -1,0 +1,3633 @@
+{
+ "admin": {
+  "/api/opciones": {
+   "periodicidades": [
+    {
+     "valor": "semanal",
+     "nombre": "Semanal"
+    },
+    {
+     "valor": "catorcenal",
+     "nombre": "Catorcenal"
+    },
+    {
+     "valor": "quincenal",
+     "nombre": "Quincenal"
+    },
+    {
+     "valor": "mensual",
+     "nombre": "Mensual"
+    }
+   ],
+   "tipos_calculo": [
+    {
+     "valor": "importe",
+     "nombre": "Importe fijo"
+    },
+    {
+     "valor": "porcentaje",
+     "nombre": "Porcentaje"
+    },
+    {
+     "valor": "horas_extra",
+     "nombre": "Horas extra (dobles)"
+    }
+   ],
+   "tipos_concepto": [
+    {
+     "valor": "percepcion",
+     "nombre": "Percepción"
+    },
+    {
+     "valor": "deduccion",
+     "nombre": "Deducción"
+    }
+   ],
+   "fracciones_art110": [
+    {
+     "valor": "I",
+     "nombre": "I · Deudas con el patrón (anticipos, préstamos, pagos en exceso)"
+    },
+    {
+     "valor": "II",
+     "nombre": "II · Renta de habitación (art. 151)"
+    },
+    {
+     "valor": "III",
+     "nombre": "III · Crédito Infonavit"
+    },
+    {
+     "valor": "IV",
+     "nombre": "IV · Cajas de ahorro y cooperativas"
+    },
+    {
+     "valor": "V",
+     "nombre": "V · Pensión alimenticia (orden judicial)"
+    },
+    {
+     "valor": "VI",
+     "nombre": "VI · Cuotas sindicales"
+    },
+    {
+     "valor": "VII",
+     "nombre": "VII · Crédito Fonacot"
+    }
+   ],
+   "tipos_descuento_infonavit": [
+    {
+     "valor": "porcentaje",
+     "nombre": "Porcentaje del SBC"
+    },
+    {
+     "valor": "cuota_fija",
+     "nombre": "Cuota fija mensual"
+    },
+    {
+     "valor": "factor_uma",
+     "nombre": "Factor de descuento (veces UMA)"
+    }
+   ],
+   "tipos_solicitud": [
+    {
+     "valor": "vacaciones",
+     "nombre": "Vacaciones"
+    },
+    {
+     "valor": "permiso_con_goce",
+     "nombre": "Permiso con goce"
+    },
+    {
+     "valor": "permiso_sin_goce",
+     "nombre": "Permiso sin goce"
+    }
+   ],
+   "tipos_incidencia": [
+    {
+     "valor": "falta",
+     "nombre": "Falta"
+    },
+    {
+     "valor": "incapacidad",
+     "nombre": "Incapacidad"
+    }
+   ],
+   "tipos_incapacidad": [
+    {
+     "valor": "01",
+     "nombre": "Riesgo de trabajo"
+    },
+    {
+     "valor": "02",
+     "nombre": "Enfermedad en general"
+    },
+    {
+     "valor": "03",
+     "nombre": "Maternidad"
+    }
+   ],
+   "zonas_salario": [
+    {
+     "valor": "general",
+     "nombre": "General"
+    },
+    {
+     "valor": "frontera",
+     "nombre": "Zona libre de la frontera norte"
+    }
+   ],
+   "tipos_nomina": [
+    {
+     "valor": "ordinaria",
+     "nombre": "Ordinaria"
+    },
+    {
+     "valor": "aguinaldo",
+     "nombre": "Aguinaldo"
+    }
+   ]
+  },
+  "/api/tablero": {
+   "usuario": "admin",
+   "rol": "Administrador",
+   "empleados_activos": 4,
+   "solicitudes_pendientes": 1,
+   "aclaraciones_pendientes": 1,
+   "restablecer_password": 0,
+   "ultima_nomina": {
+    "periodo_id": 20,
+    "tipo": "ordinaria",
+    "estado": "abierta",
+    "fecha_calculo": "2026-10-28T20:59:15.746950",
+    "num_empleados": 3,
+    "total_percepciones": 35200.0,
+    "total_deducciones": 5938.74,
+    "total_neto": 29261.26,
+    "id": 1,
+    "creado_en": "2026-10-28T20:59:15.696935",
+    "actualizado_en": "2026-10-28T20:59:15.747938",
+    "periodo": "Quincenal 2026-20 (16/10 al 31/10/2026)",
+    "tipo_periodo": "quincenal",
+    "num_publicados": 3,
+    "num_firmados": 0
+   }
+  },
+  "/api/usuarios": {
+   "items": [
+    {
+     "nombre_usuario": "admin",
+     "rol_id": 1,
+     "activo": true,
+     "solicita_restablecer": false,
+     "ultimo_acceso": "2026-10-28T20:59:15.535875",
+     "id": 1,
+     "creado_en": "2026-10-28T20:59:14.581131",
+     "actualizado_en": "2026-10-28T20:59:15.536878",
+     "rol": "Administrador",
+     "empleado_id": null,
+     "empleado": null
+    },
+    {
+     "nombre_usuario": "amartinez",
+     "rol_id": 4,
+     "activo": true,
+     "solicita_restablecer": false,
+     "ultimo_acceso": null,
+     "id": 6,
+     "creado_en": "2026-10-28T20:59:15.398886",
+     "actualizado_en": "2026-10-28T20:59:15.398886",
+     "rol": "Empleado",
+     "empleado_id": 4,
+     "empleado": "Ana Martínez López"
+    },
+    {
+     "nombre_usuario": "cgomez",
+     "rol_id": 4,
+     "activo": true,
+     "solicita_restablecer": false,
+     "ultimo_acceso": null,
+     "id": 5,
+     "creado_en": "2026-10-28T20:59:15.398886",
+     "actualizado_en": "2026-10-28T20:59:15.398886",
+     "rol": "Empleado",
+     "empleado_id": 3,
+     "empleado": "Carlos Gómez Pérez"
+    },
+    {
+     "nombre_usuario": "lhernandez",
+     "rol_id": 4,
+     "activo": true,
+     "solicita_restablecer": false,
+     "ultimo_acceso": "2026-10-28T20:59:15.631369",
+     "id": 3,
+     "creado_en": "2026-10-28T20:59:15.398886",
+     "actualizado_en": "2026-10-28T20:59:15.631369",
+     "rol": "Empleado",
+     "empleado_id": 1,
+     "empleado": "Laura Hernández Ruiz"
+    },
+    {
+     "nombre_usuario": "rh",
+     "rol_id": 2,
+     "activo": true,
+     "solicita_restablecer": false,
+     "ultimo_acceso": null,
+     "id": 2,
+     "creado_en": "2026-10-28T20:59:15.398886",
+     "actualizado_en": "2026-10-28T20:59:15.398886",
+     "rol": "Recursos Humanos",
+     "empleado_id": null,
+     "empleado": null
+    },
+    {
+     "nombre_usuario": "rtorres",
+     "rol_id": 4,
+     "activo": true,
+     "solicita_restablecer": false,
+     "ultimo_acceso": null,
+     "id": 4,
+     "creado_en": "2026-10-28T20:59:15.398886",
+     "actualizado_en": "2026-10-28T20:59:15.398886",
+     "rol": "Empleado",
+     "empleado_id": 2,
+     "empleado": "Roberto Torres Díaz"
+    }
+   ],
+   "total": 6
+  },
+  "/api/roles": {
+   "items": [
+    {
+     "nombre": "Administrador",
+     "descripcion": "Acceso total a la aplicación.",
+     "es_sistema": true,
+     "activo": true,
+     "id": 1,
+     "creado_en": "2026-10-28T20:59:14.487758",
+     "actualizado_en": "2026-10-28T20:59:14.487758",
+     "privilegios": [
+      "usuarios",
+      "empleados",
+      "catalogos",
+      "percepciones",
+      "deducciones",
+      "nomina",
+      "recibos",
+      "vacaciones",
+      "incidencias",
+      "configuracion",
+      "portal"
+     ]
+    },
+    {
+     "nombre": "Recursos Humanos",
+     "descripcion": null,
+     "es_sistema": false,
+     "activo": true,
+     "id": 2,
+     "creado_en": "2026-10-28T20:59:14.490608",
+     "actualizado_en": "2026-10-28T20:59:14.490608",
+     "privilegios": [
+      "empleados",
+      "catalogos",
+      "percepciones",
+      "deducciones",
+      "nomina",
+      "recibos",
+      "vacaciones",
+      "incidencias"
+     ]
+    },
+    {
+     "nombre": "Contabilidad",
+     "descripcion": null,
+     "es_sistema": false,
+     "activo": true,
+     "id": 3,
+     "creado_en": "2026-10-28T20:59:14.491613",
+     "actualizado_en": "2026-10-28T20:59:14.491613",
+     "privilegios": [
+      "percepciones",
+      "deducciones",
+      "nomina",
+      "recibos",
+      "configuracion"
+     ]
+    },
+    {
+     "nombre": "Empleado",
+     "descripcion": null,
+     "es_sistema": false,
+     "activo": true,
+     "id": 4,
+     "creado_en": "2026-10-28T20:59:14.492611",
+     "actualizado_en": "2026-10-28T20:59:14.492611",
+     "privilegios": [
+      "portal"
+     ]
+    }
+   ],
+   "total": 4
+  },
+  "/api/roles/privilegios": {
+   "items": [
+    {
+     "id": 1,
+     "clave": "usuarios",
+     "nombre": "Catálogo de usuarios y roles",
+     "descripcion": "Alta, baja y modificación de usuarios; configuración de roles."
+    },
+    {
+     "id": 2,
+     "clave": "empleados",
+     "nombre": "Catálogo de empleados",
+     "descripcion": "Alta, baja y modificación de empleados."
+    },
+    {
+     "id": 3,
+     "clave": "catalogos",
+     "nombre": "Catálogos generales",
+     "descripcion": "Departamentos, horarios, periodos, conceptos y días festivos."
+    },
+    {
+     "id": 4,
+     "clave": "percepciones",
+     "nombre": "Alta de percepciones y bonos",
+     "descripcion": "Registrar bonos y pagos extra a los empleados."
+    },
+    {
+     "id": 5,
+     "clave": "deducciones",
+     "nombre": "Registro de deducciones e ISR",
+     "descripcion": "Deducciones, préstamos y créditos Infonavit."
+    },
+    {
+     "id": 6,
+     "clave": "nomina",
+     "nombre": "Módulo de nómina",
+     "descripcion": "Calcular, editar, cerrar y reabrir nóminas."
+    },
+    {
+     "id": 7,
+     "clave": "recibos",
+     "nombre": "Generación de recibos de pago",
+     "descripcion": "Publicar recibos y atender aclaraciones."
+    },
+    {
+     "id": 8,
+     "clave": "vacaciones",
+     "nombre": "Vacaciones y permisos",
+     "descripcion": "Registrar, aprobar y rechazar solicitudes."
+    },
+    {
+     "id": 9,
+     "clave": "incidencias",
+     "nombre": "Faltas e incapacidades",
+     "descripcion": "Registrar faltas e incapacidades."
+    },
+    {
+     "id": 10,
+     "clave": "configuracion",
+     "nombre": "Configuración fiscal",
+     "descripcion": "Datos de la empresa, parámetros fiscales y tarifa de ISR."
+    },
+    {
+     "id": 11,
+     "clave": "portal",
+     "nombre": "Portal del empleado",
+     "descripcion": "Consultar y firmar sus recibos; solicitar vacaciones."
+    }
+   ],
+   "total": 11
+  },
+  "/api/empleados": {
+   "items": [
+    {
+     "numero_empleado": "E004",
+     "nombre": "Ana",
+     "apellido_paterno": "Martínez",
+     "apellido_materno": "López",
+     "rfc": null,
+     "curp": null,
+     "nss": null,
+     "email": null,
+     "telefono": null,
+     "puesto": "Analista",
+     "departamento_id": 3,
+     "horario_id": 1,
+     "fecha_ingreso": "2022-06-01",
+     "fecha_baja": null,
+     "periodicidad_pago": "quincenal",
+     "salario_diario": 720.0,
+     "sdi": null,
+     "usuario_id": 6,
+     "activo": true,
+     "id": 4,
+     "creado_en": "2026-10-28T20:59:15.400882",
+     "actualizado_en": "2026-10-28T20:59:15.400882",
+     "nombre_completo": "Ana Martínez López",
+     "departamento": "Recursos Humanos",
+     "horario": "Matutino (08:00 - 16:00)",
+     "usuario": "amartinez",
+     "tiene_pin": true
+    },
+    {
+     "numero_empleado": "E003",
+     "nombre": "Carlos",
+     "apellido_paterno": "Gómez",
+     "apellido_materno": "Pérez",
+     "rfc": null,
+     "curp": null,
+     "nss": null,
+     "email": null,
+     "telefono": null,
+     "puesto": "Analista",
+     "departamento_id": 1,
+     "horario_id": 1,
+     "fecha_ingreso": "2019-01-07",
+     "fecha_baja": null,
+     "periodicidad_pago": "quincenal",
+     "salario_diario": 890.0,
+     "sdi": null,
+     "usuario_id": 5,
+     "activo": true,
+     "id": 3,
+     "creado_en": "2026-10-28T20:59:15.400882",
+     "actualizado_en": "2026-10-28T20:59:15.400882",
+     "nombre_completo": "Carlos Gómez Pérez",
+     "departamento": "Sistemas",
+     "horario": "Matutino (08:00 - 16:00)",
+     "usuario": "cgomez",
+     "tiene_pin": true
+    },
+    {
+     "numero_empleado": "E001",
+     "nombre": "Laura",
+     "apellido_paterno": "Hernández",
+     "apellido_materno": "Ruiz",
+     "rfc": null,
+     "curp": null,
+     "nss": null,
+     "email": null,
+     "telefono": null,
+     "puesto": "Analista",
+     "departamento_id": 1,
+     "horario_id": 1,
+     "fecha_ingreso": "2021-03-01",
+     "fecha_baja": null,
+     "periodicidad_pago": "quincenal",
+     "salario_diario": 650.0,
+     "sdi": null,
+     "usuario_id": 3,
+     "activo": true,
+     "id": 1,
+     "creado_en": "2026-10-28T20:59:15.400882",
+     "actualizado_en": "2026-10-28T20:59:15.400882",
+     "nombre_completo": "Laura Hernández Ruiz",
+     "departamento": "Sistemas",
+     "horario": "Matutino (08:00 - 16:00)",
+     "usuario": "lhernandez",
+     "tiene_pin": true
+    },
+    {
+     "numero_empleado": "E002",
+     "nombre": "Roberto",
+     "apellido_paterno": "Torres",
+     "apellido_materno": "Díaz",
+     "rfc": null,
+     "curp": null,
+     "nss": null,
+     "email": null,
+     "telefono": null,
+     "puesto": "Analista",
+     "departamento_id": 2,
+     "horario_id": 2,
+     "fecha_ingreso": "2023-08-14",
+     "fecha_baja": null,
+     "periodicidad_pago": "semanal",
+     "salario_diario": 420.0,
+     "sdi": null,
+     "usuario_id": 4,
+     "activo": true,
+     "id": 2,
+     "creado_en": "2026-10-28T20:59:15.400882",
+     "actualizado_en": "2026-10-28T20:59:15.400882",
+     "nombre_completo": "Roberto Torres Díaz",
+     "departamento": "Producción",
+     "horario": "Vespertino (14:00 - 22:00)",
+     "usuario": "rtorres",
+     "tiene_pin": true
+    }
+   ],
+   "total": 4
+  },
+  "/api/empleados/1": {
+   "numero_empleado": "E001",
+   "nombre": "Laura",
+   "apellido_paterno": "Hernández",
+   "apellido_materno": "Ruiz",
+   "rfc": null,
+   "curp": null,
+   "nss": null,
+   "email": null,
+   "telefono": null,
+   "puesto": "Analista",
+   "departamento_id": 1,
+   "horario_id": 1,
+   "fecha_ingreso": "2021-03-01",
+   "fecha_baja": null,
+   "periodicidad_pago": "quincenal",
+   "salario_diario": 650.0,
+   "sdi": null,
+   "usuario_id": 3,
+   "activo": true,
+   "id": 1,
+   "creado_en": "2026-10-28T20:59:15.400882",
+   "actualizado_en": "2026-10-28T20:59:15.400882",
+   "nombre_completo": "Laura Hernández Ruiz",
+   "departamento": "Sistemas",
+   "horario": "Matutino (08:00 - 16:00)",
+   "usuario": "lhernandez",
+   "tiene_pin": true,
+   "sdi_calculado": 686.51
+  },
+  "/api/empleados/1/saldo-vacaciones": {
+   "anios_servicio": 5,
+   "inicio_periodo": "2026-03-01",
+   "proximo_aniversario": "2027-03-01",
+   "dias_derecho": 20,
+   "dias_tomados": 0,
+   "dias_pendientes": 0,
+   "dias_disponibles": 20
+  },
+  "/api/departamentos": {
+   "items": [
+    {
+     "nombre": "Producción",
+     "descripcion": null,
+     "activo": true,
+     "id": 2,
+     "creado_en": "2026-10-28T20:59:14.609127",
+     "actualizado_en": "2026-10-28T20:59:14.609127"
+    },
+    {
+     "nombre": "Recursos Humanos",
+     "descripcion": null,
+     "activo": true,
+     "id": 3,
+     "creado_en": "2026-10-28T20:59:14.609127",
+     "actualizado_en": "2026-10-28T20:59:14.609127"
+    },
+    {
+     "nombre": "Sistemas",
+     "descripcion": null,
+     "activo": true,
+     "id": 1,
+     "creado_en": "2026-10-28T20:59:14.609127",
+     "actualizado_en": "2026-10-28T20:59:14.609127"
+    }
+   ],
+   "total": 3
+  },
+  "/api/horarios": {
+   "items": [
+    {
+     "nombre_turno": "Matutino",
+     "hora_entrada": "08:00",
+     "hora_salida": "16:00",
+     "horas_jornada": 8.0,
+     "dias_laborales": "1,2,3,4,5",
+     "activo": true,
+     "id": 1,
+     "creado_en": "2026-10-28T20:59:14.610128",
+     "actualizado_en": "2026-10-28T20:59:14.610128",
+     "nombre": "Matutino (08:00 - 16:00)"
+    },
+    {
+     "nombre_turno": "Vespertino",
+     "hora_entrada": "14:00",
+     "hora_salida": "22:00",
+     "horas_jornada": 8.0,
+     "dias_laborales": "1,2,3,4,5,6",
+     "activo": true,
+     "id": 2,
+     "creado_en": "2026-10-28T20:59:14.610128",
+     "actualizado_en": "2026-10-28T20:59:14.610128",
+     "nombre": "Vespertino (14:00 - 22:00)"
+    }
+   ],
+   "total": 2
+  },
+  "/api/periodos": {
+   "items": [
+    {
+     "tipo_periodo": "semanal",
+     "ejercicio": 2026,
+     "numero": 53,
+     "fecha_inicial": "2026-12-31",
+     "fecha_final": "2027-01-06",
+     "fecha_pago": "2027-01-06",
+     "dias_pago": 7,
+     "estado": "abierto",
+     "activo": true,
+     "id": 77,
+     "creado_en": "2026-10-28T20:59:14.620132",
+     "actualizado_en": "2026-10-28T20:59:14.620132",
+     "nombre": "Semanal 2026-53 (31/12 al 06/01/2027)"
+    },
+    {
+     "tipo_periodo": "semanal",
+     "ejercicio": 2026,
+     "numero": 52,
+     "fecha_inicial": "2026-12-24",
+     "fecha_final": "2026-12-30",
+     "fecha_pago": "2026-12-30",
+     "dias_pago": 7,
+     "estado": "abierto",
+     "activo": true,
+     "id": 76,
+     "creado_en": "2026-10-28T20:59:14.620132",
+     "actualizado_en": "2026-10-28T20:59:14.620132",
+     "nombre": "Semanal 2026-52 (24/12 al 30/12/2026)"
+    },
+    {
+     "tipo_periodo": "semanal",
+     "ejercicio": 2026,
+     "numero": 51,
+     "fecha_inicial": "2026-12-17",
+     "fecha_final": "2026-12-23",
+     "fecha_pago": "2026-12-23",
+     "dias_pago": 7,
+     "estado": "abierto",
+     "activo": true,
+     "id": 75,
+     "creado_en": "2026-10-28T20:59:14.620132",
+     "actualizado_en": "2026-10-28T20:59:14.620132",
+     "nombre": "Semanal 2026-51 (17/12 al 23/12/2026)"
+    },
+    {
+     "tipo_periodo": "quincenal",
+     "ejercicio": 2026,
+     "numero": 24,
+     "fecha_inicial": "2026-12-16",
+     "fecha_final": "2026-12-31",
+     "fecha_pago": "2026-12-31",
+     "dias_pago": 15,
+     "estado": "abierto",
+     "activo": true,
+     "id": 24,
+     "creado_en": "2026-10-28T20:59:14.615131",
+     "actualizado_en": "2026-10-28T20:59:14.615131",
+     "nombre": "Quincenal 2026-24 (16/12 al 31/12/2026)"
+    },
+    {
+     "tipo_periodo": "semanal",
+     "ejercicio": 2026,
+     "numero": 50,
+     "fecha_inicial": "2026-12-10",
+     "fecha_final": "2026-12-16",
+     "fecha_pago": "2026-12-16",
+     "dias_pago": 7,
+     "estado": "abierto",
+     "activo": true,
+     "id": 74,
+     "creado_en": "2026-10-28T20:59:14.620132",
+     "actualizado_en": "2026-10-28T20:59:14.620132",
+     "nombre": "Semanal 2026-50 (10/12 al 16/12/2026)"
+    },
+    {
+     "tipo_periodo": "semanal",
+     "ejercicio": 2026,
+     "numero": 49,
+     "fecha_inicial": "2026-12-03",
+     "fecha_final": "2026-12-09",
+     "fecha_pago": "2026-12-09",
+     "dias_pago": 7,
+     "estado": "abierto",
+     "activo": true,
+     "id": 73,
+     "creado_en": "2026-10-28T20:59:14.620132",
+     "actualizado_en": "2026-10-28T20:59:14.620132",
+     "nombre": "Semanal 2026-49 (03/12 al 09/12/2026)"
+    },
+    {
+     "tipo_periodo": "quincenal",
+     "ejercicio": 2026,
+     "numero": 23,
+     "fecha_inicial": "2026-12-01",
+     "fecha_final": "2026-12-15",
+     "fecha_pago": "2026-12-15",
+     "dias_pago": 15,
+     "estado": "abierto",
+     "activo": true,
+     "id": 23,
+     "creado_en": "2026-10-28T20:59:14.615131",
+     "actualizado_en": "2026-10-28T20:59:14.615131",
+     "nombre": "Quincenal 2026-23 (01/12 al 15/12/2026)"
+    },
+    {
+     "tipo_periodo": "semanal",
+     "ejercicio": 2026,
+     "numero": 48,
+     "fecha_inicial": "2026-11-26",
+     "fecha_final": "2026-12-02",
+     "fecha_pago": "2026-12-02",
+     "dias_pago": 7,
+     "estado": "abierto",
+     "activo": true,
+     "id": 72,
+     "creado_en": "2026-10-28T20:59:14.620132",
+     "actualizado_en": "2026-10-28T20:59:14.620132",
+     "nombre": "Semanal 2026-48 (26/11 al 02/12/2026)"
+    },
+    {
+     "tipo_periodo": "semanal",
+     "ejercicio": 2026,
+     "numero": 47,
+     "fecha_inicial": "2026-11-19",
+     "fecha_final": "2026-11-25",
+     "fecha_pago": "2026-11-25",
+     "dias_pago": 7,
+     "estado": "abierto",
+     "activo": true,
+     "id": 71,
+     "creado_en": "2026-10-28T20:59:14.620132",
+     "actualizado_en": "2026-10-28T20:59:14.620132",
+     "nombre": "Semanal 2026-47 (19/11 al 25/11/2026)"
+    },
+    {
+     "tipo_periodo": "quincenal",
+     "ejercicio": 2026,
+     "numero": 22,
+     "fecha_inicial": "2026-11-16",
+     "fecha_final": "2026-11-30",
+     "fecha_pago": "2026-11-30",
+     "dias_pago": 15,
+     "estado": "abierto",
+     "activo": true,
+     "id": 22,
+     "creado_en": "2026-10-28T20:59:14.615131",
+     "actualizado_en": "2026-10-28T20:59:14.615131",
+     "nombre": "Quincenal 2026-22 (16/11 al 30/11/2026)"
+    },
+    {
+     "tipo_periodo": "semanal",
+     "ejercicio": 2026,
+     "numero": 46,
+     "fecha_inicial": "2026-11-12",
+     "fecha_final": "2026-11-18",
+     "fecha_pago": "2026-11-18",
+     "dias_pago": 7,
+     "estado": "abierto",
+     "activo": true,
+     "id": 70,
+     "creado_en": "2026-10-28T20:59:14.620132",
+     "actualizado_en": "2026-10-28T20:59:14.620132",
+     "nombre": "Semanal 2026-46 (12/11 al 18/11/2026)"
+    },
+    {
+     "tipo_periodo": "semanal",
+     "ejercicio": 2026,
+     "numero": 45,
+     "fecha_inicial": "2026-11-05",
+     "fecha_final": "2026-11-11",
+     "fecha_pago": "2026-11-11",
+     "dias_pago": 7,
+     "estado": "abierto",
+     "activo": true,
+     "id": 69,
+     "creado_en": "2026-10-28T20:59:14.620132",
+     "actualizado_en": "2026-10-28T20:59:14.620132",
+     "nombre": "Semanal 2026-45 (05/11 al 11/11/2026)"
+    },
+    {
+     "tipo_periodo": "quincenal",
+     "ejercicio": 2026,
+     "numero": 21,
+     "fecha_inicial": "2026-11-01",
+     "fecha_final": "2026-11-15",
+     "fecha_pago": "2026-11-15",
+     "dias_pago": 15,
+     "estado": "abierto",
+     "activo": true,
+     "id": 21,
+     "creado_en": "2026-10-28T20:59:14.615131",
+     "actualizado_en": "2026-10-28T20:59:14.615131",
+     "nombre": "Quincenal 2026-21 (01/11 al 15/11/2026)"
+    },
+    {
+     "tipo_periodo": "semanal",
+     "ejercicio": 2026,
+     "numero": 44,
+     "fecha_inicial": "2026-10-29",
+     "fecha_final": "2026-11-04",
+     "fecha_pago": "2026-11-04",
+     "dias_pago": 7,
+     "estado": "abierto",
+     "activo": true,
+     "id": 68,
+     "creado_en": "2026-10-28T20:59:14.620132",
+     "actualizado_en": "2026-10-28T20:59:14.620132",
+     "nombre": "Semanal 2026-44 (29/10 al 04/11/2026)"
+    },
+    {
+     "tipo_periodo": "semanal",
+     "ejercicio": 2026,
+     "numero": 43,
+     "fecha_inicial": "2026-10-22",
+     "fecha_final": "2026-10-28",
+     "fecha_pago": "2026-10-28",
+     "dias_pago": 7,
+     "estado": "abierto",
+     "activo": true,
+     "id": 67,
+     "creado_en": "2026-10-28T20:59:14.620132",
+     "actualizado_en": "2026-10-28T20:59:14.620132",
+     "nombre": "Semanal 2026-43 (22/10 al 28/10/2026)"
+    },
+    {
+     "tipo_periodo": "quincenal",
+     "ejercicio": 2026,
+     "numero": 20,
+     "fecha_inicial": "2026-10-16",
+     "fecha_final": "2026-10-31",
+     "fecha_pago": "2026-10-31",
+     "dias_pago": 15,
+     "estado": "abierto",
+     "activo": true,
+     "id": 20,
+     "creado_en": "2026-10-28T20:59:14.615131",
+     "actualizado_en": "2026-10-28T20:59:14.615131",
+     "nombre": "Quincenal 2026-20 (16/10 al 31/10/2026)"
+    },
+    {
+     "tipo_periodo": "semanal",
+     "ejercicio": 2026,
+     "numero": 42,
+     "fecha_inicial": "2026-10-15",
+     "fecha_final": "2026-10-21",
+     "fecha_pago": "2026-10-21",
+     "dias_pago": 7,
+     "estado": "abierto",
+     "activo": true,
+     "id": 66,
+     "creado_en": "2026-10-28T20:59:14.620132",
+     "actualizado_en": "2026-10-28T20:59:14.620132",
+     "nombre": "Semanal 2026-42 (15/10 al 21/10/2026)"
+    },
+    {
+     "tipo_periodo": "semanal",
+     "ejercicio": 2026,
+     "numero": 41,
+     "fecha_inicial": "2026-10-08",
+     "fecha_final": "2026-10-14",
+     "fecha_pago": "2026-10-14",
+     "dias_pago": 7,
+     "estado": "abierto",
+     "activo": true,
+     "id": 65,
+     "creado_en": "2026-10-28T20:59:14.620132",
+     "actualizado_en": "2026-10-28T20:59:14.620132",
+     "nombre": "Semanal 2026-41 (08/10 al 14/10/2026)"
+    },
+    {
+     "tipo_periodo": "quincenal",
+     "ejercicio": 2026,
+     "numero": 19,
+     "fecha_inicial": "2026-10-01",
+     "fecha_final": "2026-10-15",
+     "fecha_pago": "2026-10-15",
+     "dias_pago": 15,
+     "estado": "abierto",
+     "activo": true,
+     "id": 19,
+     "creado_en": "2026-10-28T20:59:14.615131",
+     "actualizado_en": "2026-10-28T20:59:14.615131",
+     "nombre": "Quincenal 2026-19 (01/10 al 15/10/2026)"
+    },
+    {
+     "tipo_periodo": "semanal",
+     "ejercicio": 2026,
+     "numero": 40,
+     "fecha_inicial": "2026-10-01",
+     "fecha_final": "2026-10-07",
+     "fecha_pago": "2026-10-07",
+     "dias_pago": 7,
+     "estado": "abierto",
+     "activo": true,
+     "id": 64,
+     "creado_en": "2026-10-28T20:59:14.620132",
+     "actualizado_en": "2026-10-28T20:59:14.620132",
+     "nombre": "Semanal 2026-40 (01/10 al 07/10/2026)"
+    },
+    {
+     "tipo_periodo": "semanal",
+     "ejercicio": 2026,
+     "numero": 39,
+     "fecha_inicial": "2026-09-24",
+     "fecha_final": "2026-09-30",
+     "fecha_pago": "2026-09-30",
+     "dias_pago": 7,
+     "estado": "abierto",
+     "activo": true,
+     "id": 63,
+     "creado_en": "2026-10-28T20:59:14.620132",
+     "actualizado_en": "2026-10-28T20:59:14.620132",
+     "nombre": "Semanal 2026-39 (24/09 al 30/09/2026)"
+    },
+    {
+     "tipo_periodo": "semanal",
+     "ejercicio": 2026,
+     "numero": 38,
+     "fecha_inicial": "2026-09-17",
+     "fecha_final": "2026-09-23",
+     "fecha_pago": "2026-09-23",
+     "dias_pago": 7,
+     "estado": "abierto",
+     "activo": true,
+     "id": 62,
+     "creado_en": "2026-10-28T20:59:14.620132",
+     "actualizado_en": "2026-10-28T20:59:14.620132",
+     "nombre": "Semanal 2026-38 (17/09 al 23/09/2026)"
+    },
+    {
+     "tipo_periodo": "quincenal",
+     "ejercicio": 2026,
+     "numero": 18,
+     "fecha_inicial": "2026-09-16",
+     "fecha_final": "2026-09-30",
+     "fecha_pago": "2026-09-30",
+     "dias_pago": 15,
+     "estado": "abierto",
+     "activo": true,
+     "id": 18,
+     "creado_en": "2026-10-28T20:59:14.615131",
+     "actualizado_en": "2026-10-28T20:59:14.615131",
+     "nombre": "Quincenal 2026-18 (16/09 al 30/09/2026)"
+    },
+    {
+     "tipo_periodo": "semanal",
+     "ejercicio": 2026,
+     "numero": 37,
+     "fecha_inicial": "2026-09-10",
+     "fecha_final": "2026-09-16",
+     "fecha_pago": "2026-09-16",
+     "dias_pago": 7,
+     "estado": "abierto",
+     "activo": true,
+     "id": 61,
+     "creado_en": "2026-10-28T20:59:14.620132",
+     "actualizado_en": "2026-10-28T20:59:14.620132",
+     "nombre": "Semanal 2026-37 (10/09 al 16/09/2026)"
+    },
+    {
+     "tipo_periodo": "semanal",
+     "ejercicio": 2026,
+     "numero": 36,
+     "fecha_inicial": "2026-09-03",
+     "fecha_final": "2026-09-09",
+     "fecha_pago": "2026-09-09",
+     "dias_pago": 7,
+     "estado": "abierto",
+     "activo": true,
+     "id": 60,
+     "creado_en": "2026-10-28T20:59:14.620132",
+     "actualizado_en": "2026-10-28T20:59:14.620132",
+     "nombre": "Semanal 2026-36 (03/09 al 09/09/2026)"
+    },
+    {
+     "tipo_periodo": "quincenal",
+     "ejercicio": 2026,
+     "numero": 17,
+     "fecha_inicial": "2026-09-01",
+     "fecha_final": "2026-09-15",
+     "fecha_pago": "2026-09-15",
+     "dias_pago": 15,
+     "estado": "abierto",
+     "activo": true,
+     "id": 17,
+     "creado_en": "2026-10-28T20:59:14.615131",
+     "actualizado_en": "2026-10-28T20:59:14.615131",
+     "nombre": "Quincenal 2026-17 (01/09 al 15/09/2026)"
+    },
+    {
+     "tipo_periodo": "semanal",
+     "ejercicio": 2026,
+     "numero": 35,
+     "fecha_inicial": "2026-08-27",
+     "fecha_final": "2026-09-02",
+     "fecha_pago": "2026-09-02",
+     "dias_pago": 7,
+     "estado": "abierto",
+     "activo": true,
+     "id": 59,
+     "creado_en": "2026-10-28T20:59:14.620132",
+     "actualizado_en": "2026-10-28T20:59:14.620132",
+     "nombre": "Semanal 2026-35 (27/08 al 02/09/2026)"
+    },
+    {
+     "tipo_periodo": "semanal",
+     "ejercicio": 2026,
+     "numero": 34,
+     "fecha_inicial": "2026-08-20",
+     "fecha_final": "2026-08-26",
+     "fecha_pago": "2026-08-26",
+     "dias_pago": 7,
+     "estado": "abierto",
+     "activo": true,
+     "id": 58,
+     "creado_en": "2026-10-28T20:59:14.620132",
+     "actualizado_en": "2026-10-28T20:59:14.620132",
+     "nombre": "Semanal 2026-34 (20/08 al 26/08/2026)"
+    },
+    {
+     "tipo_periodo": "quincenal",
+     "ejercicio": 2026,
+     "numero": 16,
+     "fecha_inicial": "2026-08-16",
+     "fecha_final": "2026-08-31",
+     "fecha_pago": "2026-08-31",
+     "dias_pago": 15,
+     "estado": "abierto",
+     "activo": true,
+     "id": 16,
+     "creado_en": "2026-10-28T20:59:14.615131",
+     "actualizado_en": "2026-10-28T20:59:14.615131",
+     "nombre": "Quincenal 2026-16 (16/08 al 31/08/2026)"
+    },
+    {
+     "tipo_periodo": "semanal",
+     "ejercicio": 2026,
+     "numero": 33,
+     "fecha_inicial": "2026-08-13",
+     "fecha_final": "2026-08-19",
+     "fecha_pago": "2026-08-19",
+     "dias_pago": 7,
+     "estado": "abierto",
+     "activo": true,
+     "id": 57,
+     "creado_en": "2026-10-28T20:59:14.620132",
+     "actualizado_en": "2026-10-28T20:59:14.620132",
+     "nombre": "Semanal 2026-33 (13/08 al 19/08/2026)"
+    },
+    {
+     "tipo_periodo": "semanal",
+     "ejercicio": 2026,
+     "numero": 32,
+     "fecha_inicial": "2026-08-06",
+     "fecha_final": "2026-08-12",
+     "fecha_pago": "2026-08-12",
+     "dias_pago": 7,
+     "estado": "abierto",
+     "activo": true,
+     "id": 56,
+     "creado_en": "2026-10-28T20:59:14.620132",
+     "actualizado_en": "2026-10-28T20:59:14.620132",
+     "nombre": "Semanal 2026-32 (06/08 al 12/08/2026)"
+    },
+    {
+     "tipo_periodo": "quincenal",
+     "ejercicio": 2026,
+     "numero": 15,
+     "fecha_inicial": "2026-08-01",
+     "fecha_final": "2026-08-15",
+     "fecha_pago": "2026-08-15",
+     "dias_pago": 15,
+     "estado": "abierto",
+     "activo": true,
+     "id": 15,
+     "creado_en": "2026-10-28T20:59:14.615131",
+     "actualizado_en": "2026-10-28T20:59:14.615131",
+     "nombre": "Quincenal 2026-15 (01/08 al 15/08/2026)"
+    },
+    {
+     "tipo_periodo": "semanal",
+     "ejercicio": 2026,
+     "numero": 31,
+     "fecha_inicial": "2026-07-30",
+     "fecha_final": "2026-08-05",
+     "fecha_pago": "2026-08-05",
+     "dias_pago": 7,
+     "estado": "abierto",
+     "activo": true,
+     "id": 55,
+     "creado_en": "2026-10-28T20:59:14.620132",
+     "actualizado_en": "2026-10-28T20:59:14.620132",
+     "nombre": "Semanal 2026-31 (30/07 al 05/08/2026)"
+    },
+    {
+     "tipo_periodo": "semanal",
+     "ejercicio": 2026,
+     "numero": 30,
+     "fecha_inicial": "2026-07-23",
+     "fecha_final": "2026-07-29",
+     "fecha_pago": "2026-07-29",
+     "dias_pago": 7,
+     "estado": "abierto",
+     "activo": true,
+     "id": 54,
+     "creado_en": "2026-10-28T20:59:14.620132",
+     "actualizado_en": "2026-10-28T20:59:14.620132",
+     "nombre": "Semanal 2026-30 (23/07 al 29/07/2026)"
+    },
+    {
+     "tipo_periodo": "quincenal",
+     "ejercicio": 2026,
+     "numero": 14,
+     "fecha_inicial": "2026-07-16",
+     "fecha_final": "2026-07-31",
+     "fecha_pago": "2026-07-31",
+     "dias_pago": 15,
+     "estado": "abierto",
+     "activo": true,
+     "id": 14,
+     "creado_en": "2026-10-28T20:59:14.615131",
+     "actualizado_en": "2026-10-28T20:59:14.615131",
+     "nombre": "Quincenal 2026-14 (16/07 al 31/07/2026)"
+    },
+    {
+     "tipo_periodo": "semanal",
+     "ejercicio": 2026,
+     "numero": 29,
+     "fecha_inicial": "2026-07-16",
+     "fecha_final": "2026-07-22",
+     "fecha_pago": "2026-07-22",
+     "dias_pago": 7,
+     "estado": "abierto",
+     "activo": true,
+     "id": 53,
+     "creado_en": "2026-10-28T20:59:14.620132",
+     "actualizado_en": "2026-10-28T20:59:14.620132",
+     "nombre": "Semanal 2026-29 (16/07 al 22/07/2026)"
+    },
+    {
+     "tipo_periodo": "semanal",
+     "ejercicio": 2026,
+     "numero": 28,
+     "fecha_inicial": "2026-07-09",
+     "fecha_final": "2026-07-15",
+     "fecha_pago": "2026-07-15",
+     "dias_pago": 7,
+     "estado": "abierto",
+     "activo": true,
+     "id": 52,
+     "creado_en": "2026-10-28T20:59:14.620132",
+     "actualizado_en": "2026-10-28T20:59:14.620132",
+     "nombre": "Semanal 2026-28 (09/07 al 15/07/2026)"
+    },
+    {
+     "tipo_periodo": "semanal",
+     "ejercicio": 2026,
+     "numero": 27,
+     "fecha_inicial": "2026-07-02",
+     "fecha_final": "2026-07-08",
+     "fecha_pago": "2026-07-08",
+     "dias_pago": 7,
+     "estado": "abierto",
+     "activo": true,
+     "id": 51,
+     "creado_en": "2026-10-28T20:59:14.620132",
+     "actualizado_en": "2026-10-28T20:59:14.620132",
+     "nombre": "Semanal 2026-27 (02/07 al 08/07/2026)"
+    },
+    {
+     "tipo_periodo": "quincenal",
+     "ejercicio": 2026,
+     "numero": 13,
+     "fecha_inicial": "2026-07-01",
+     "fecha_final": "2026-07-15",
+     "fecha_pago": "2026-07-15",
+     "dias_pago": 15,
+     "estado": "abierto",
+     "activo": true,
+     "id": 13,
+     "creado_en": "2026-10-28T20:59:14.615131",
+     "actualizado_en": "2026-10-28T20:59:14.615131",
+     "nombre": "Quincenal 2026-13 (01/07 al 15/07/2026)"
+    },
+    {
+     "tipo_periodo": "semanal",
+     "ejercicio": 2026,
+     "numero": 26,
+     "fecha_inicial": "2026-06-25",
+     "fecha_final": "2026-07-01",
+     "fecha_pago": "2026-07-01",
+     "dias_pago": 7,
+     "estado": "abierto",
+     "activo": true,
+     "id": 50,
+     "creado_en": "2026-10-28T20:59:14.620132",
+     "actualizado_en": "2026-10-28T20:59:14.620132",
+     "nombre": "Semanal 2026-26 (25/06 al 01/07/2026)"
+    },
+    {
+     "tipo_periodo": "semanal",
+     "ejercicio": 2026,
+     "numero": 25,
+     "fecha_inicial": "2026-06-18",
+     "fecha_final": "2026-06-24",
+     "fecha_pago": "2026-06-24",
+     "dias_pago": 7,
+     "estado": "abierto",
+     "activo": true,
+     "id": 49,
+     "creado_en": "2026-10-28T20:59:14.620132",
+     "actualizado_en": "2026-10-28T20:59:14.620132",
+     "nombre": "Semanal 2026-25 (18/06 al 24/06/2026)"
+    },
+    {
+     "tipo_periodo": "quincenal",
+     "ejercicio": 2026,
+     "numero": 12,
+     "fecha_inicial": "2026-06-16",
+     "fecha_final": "2026-06-30",
+     "fecha_pago": "2026-06-30",
+     "dias_pago": 15,
+     "estado": "abierto",
+     "activo": true,
+     "id": 12,
+     "creado_en": "2026-10-28T20:59:14.615131",
+     "actualizado_en": "2026-10-28T20:59:14.615131",
+     "nombre": "Quincenal 2026-12 (16/06 al 30/06/2026)"
+    },
+    {
+     "tipo_periodo": "semanal",
+     "ejercicio": 2026,
+     "numero": 24,
+     "fecha_inicial": "2026-06-11",
+     "fecha_final": "2026-06-17",
+     "fecha_pago": "2026-06-17",
+     "dias_pago": 7,
+     "estado": "abierto",
+     "activo": true,
+     "id": 48,
+     "creado_en": "2026-10-28T20:59:14.620132",
+     "actualizado_en": "2026-10-28T20:59:14.620132",
+     "nombre": "Semanal 2026-24 (11/06 al 17/06/2026)"
+    },
+    {
+     "tipo_periodo": "semanal",
+     "ejercicio": 2026,
+     "numero": 23,
+     "fecha_inicial": "2026-06-04",
+     "fecha_final": "2026-06-10",
+     "fecha_pago": "2026-06-10",
+     "dias_pago": 7,
+     "estado": "abierto",
+     "activo": true,
+     "id": 47,
+     "creado_en": "2026-10-28T20:59:14.620132",
+     "actualizado_en": "2026-10-28T20:59:14.620132",
+     "nombre": "Semanal 2026-23 (04/06 al 10/06/2026)"
+    },
+    {
+     "tipo_periodo": "quincenal",
+     "ejercicio": 2026,
+     "numero": 11,
+     "fecha_inicial": "2026-06-01",
+     "fecha_final": "2026-06-15",
+     "fecha_pago": "2026-06-15",
+     "dias_pago": 15,
+     "estado": "abierto",
+     "activo": true,
+     "id": 11,
+     "creado_en": "2026-10-28T20:59:14.615131",
+     "actualizado_en": "2026-10-28T20:59:14.615131",
+     "nombre": "Quincenal 2026-11 (01/06 al 15/06/2026)"
+    },
+    {
+     "tipo_periodo": "semanal",
+     "ejercicio": 2026,
+     "numero": 22,
+     "fecha_inicial": "2026-05-28",
+     "fecha_final": "2026-06-03",
+     "fecha_pago": "2026-06-03",
+     "dias_pago": 7,
+     "estado": "abierto",
+     "activo": true,
+     "id": 46,
+     "creado_en": "2026-10-28T20:59:14.620132",
+     "actualizado_en": "2026-10-28T20:59:14.620132",
+     "nombre": "Semanal 2026-22 (28/05 al 03/06/2026)"
+    },
+    {
+     "tipo_periodo": "semanal",
+     "ejercicio": 2026,
+     "numero": 21,
+     "fecha_inicial": "2026-05-21",
+     "fecha_final": "2026-05-27",
+     "fecha_pago": "2026-05-27",
+     "dias_pago": 7,
+     "estado": "abierto",
+     "activo": true,
+     "id": 45,
+     "creado_en": "2026-10-28T20:59:14.620132",
+     "actualizado_en": "2026-10-28T20:59:14.620132",
+     "nombre": "Semanal 2026-21 (21/05 al 27/05/2026)"
+    },
+    {
+     "tipo_periodo": "quincenal",
+     "ejercicio": 2026,
+     "numero": 10,
+     "fecha_inicial": "2026-05-16",
+     "fecha_final": "2026-05-31",
+     "fecha_pago": "2026-05-31",
+     "dias_pago": 15,
+     "estado": "abierto",
+     "activo": true,
+     "id": 10,
+     "creado_en": "2026-10-28T20:59:14.615131",
+     "actualizado_en": "2026-10-28T20:59:14.615131",
+     "nombre": "Quincenal 2026-10 (16/05 al 31/05/2026)"
+    },
+    {
+     "tipo_periodo": "semanal",
+     "ejercicio": 2026,
+     "numero": 20,
+     "fecha_inicial": "2026-05-14",
+     "fecha_final": "2026-05-20",
+     "fecha_pago": "2026-05-20",
+     "dias_pago": 7,
+     "estado": "abierto",
+     "activo": true,
+     "id": 44,
+     "creado_en": "2026-10-28T20:59:14.620132",
+     "actualizado_en": "2026-10-28T20:59:14.620132",
+     "nombre": "Semanal 2026-20 (14/05 al 20/05/2026)"
+    },
+    {
+     "tipo_periodo": "semanal",
+     "ejercicio": 2026,
+     "numero": 19,
+     "fecha_inicial": "2026-05-07",
+     "fecha_final": "2026-05-13",
+     "fecha_pago": "2026-05-13",
+     "dias_pago": 7,
+     "estado": "abierto",
+     "activo": true,
+     "id": 43,
+     "creado_en": "2026-10-28T20:59:14.620132",
+     "actualizado_en": "2026-10-28T20:59:14.620132",
+     "nombre": "Semanal 2026-19 (07/05 al 13/05/2026)"
+    },
+    {
+     "tipo_periodo": "quincenal",
+     "ejercicio": 2026,
+     "numero": 9,
+     "fecha_inicial": "2026-05-01",
+     "fecha_final": "2026-05-15",
+     "fecha_pago": "2026-05-15",
+     "dias_pago": 15,
+     "estado": "abierto",
+     "activo": true,
+     "id": 9,
+     "creado_en": "2026-10-28T20:59:14.615131",
+     "actualizado_en": "2026-10-28T20:59:14.615131",
+     "nombre": "Quincenal 2026-09 (01/05 al 15/05/2026)"
+    },
+    {
+     "tipo_periodo": "semanal",
+     "ejercicio": 2026,
+     "numero": 18,
+     "fecha_inicial": "2026-04-30",
+     "fecha_final": "2026-05-06",
+     "fecha_pago": "2026-05-06",
+     "dias_pago": 7,
+     "estado": "abierto",
+     "activo": true,
+     "id": 42,
+     "creado_en": "2026-10-28T20:59:14.620132",
+     "actualizado_en": "2026-10-28T20:59:14.620132",
+     "nombre": "Semanal 2026-18 (30/04 al 06/05/2026)"
+    },
+    {
+     "tipo_periodo": "semanal",
+     "ejercicio": 2026,
+     "numero": 17,
+     "fecha_inicial": "2026-04-23",
+     "fecha_final": "2026-04-29",
+     "fecha_pago": "2026-04-29",
+     "dias_pago": 7,
+     "estado": "abierto",
+     "activo": true,
+     "id": 41,
+     "creado_en": "2026-10-28T20:59:14.620132",
+     "actualizado_en": "2026-10-28T20:59:14.620132",
+     "nombre": "Semanal 2026-17 (23/04 al 29/04/2026)"
+    },
+    {
+     "tipo_periodo": "quincenal",
+     "ejercicio": 2026,
+     "numero": 8,
+     "fecha_inicial": "2026-04-16",
+     "fecha_final": "2026-04-30",
+     "fecha_pago": "2026-04-30",
+     "dias_pago": 15,
+     "estado": "abierto",
+     "activo": true,
+     "id": 8,
+     "creado_en": "2026-10-28T20:59:14.615131",
+     "actualizado_en": "2026-10-28T20:59:14.615131",
+     "nombre": "Quincenal 2026-08 (16/04 al 30/04/2026)"
+    },
+    {
+     "tipo_periodo": "semanal",
+     "ejercicio": 2026,
+     "numero": 16,
+     "fecha_inicial": "2026-04-16",
+     "fecha_final": "2026-04-22",
+     "fecha_pago": "2026-04-22",
+     "dias_pago": 7,
+     "estado": "abierto",
+     "activo": true,
+     "id": 40,
+     "creado_en": "2026-10-28T20:59:14.620132",
+     "actualizado_en": "2026-10-28T20:59:14.620132",
+     "nombre": "Semanal 2026-16 (16/04 al 22/04/2026)"
+    },
+    {
+     "tipo_periodo": "semanal",
+     "ejercicio": 2026,
+     "numero": 15,
+     "fecha_inicial": "2026-04-09",
+     "fecha_final": "2026-04-15",
+     "fecha_pago": "2026-04-15",
+     "dias_pago": 7,
+     "estado": "abierto",
+     "activo": true,
+     "id": 39,
+     "creado_en": "2026-10-28T20:59:14.620132",
+     "actualizado_en": "2026-10-28T20:59:14.620132",
+     "nombre": "Semanal 2026-15 (09/04 al 15/04/2026)"
+    },
+    {
+     "tipo_periodo": "semanal",
+     "ejercicio": 2026,
+     "numero": 14,
+     "fecha_inicial": "2026-04-02",
+     "fecha_final": "2026-04-08",
+     "fecha_pago": "2026-04-08",
+     "dias_pago": 7,
+     "estado": "abierto",
+     "activo": true,
+     "id": 38,
+     "creado_en": "2026-10-28T20:59:14.620132",
+     "actualizado_en": "2026-10-28T20:59:14.620132",
+     "nombre": "Semanal 2026-14 (02/04 al 08/04/2026)"
+    },
+    {
+     "tipo_periodo": "quincenal",
+     "ejercicio": 2026,
+     "numero": 7,
+     "fecha_inicial": "2026-04-01",
+     "fecha_final": "2026-04-15",
+     "fecha_pago": "2026-04-15",
+     "dias_pago": 15,
+     "estado": "abierto",
+     "activo": true,
+     "id": 7,
+     "creado_en": "2026-10-28T20:59:14.615131",
+     "actualizado_en": "2026-10-28T20:59:14.615131",
+     "nombre": "Quincenal 2026-07 (01/04 al 15/04/2026)"
+    },
+    {
+     "tipo_periodo": "semanal",
+     "ejercicio": 2026,
+     "numero": 13,
+     "fecha_inicial": "2026-03-26",
+     "fecha_final": "2026-04-01",
+     "fecha_pago": "2026-04-01",
+     "dias_pago": 7,
+     "estado": "abierto",
+     "activo": true,
+     "id": 37,
+     "creado_en": "2026-10-28T20:59:14.620132",
+     "actualizado_en": "2026-10-28T20:59:14.620132",
+     "nombre": "Semanal 2026-13 (26/03 al 01/04/2026)"
+    },
+    {
+     "tipo_periodo": "semanal",
+     "ejercicio": 2026,
+     "numero": 12,
+     "fecha_inicial": "2026-03-19",
+     "fecha_final": "2026-03-25",
+     "fecha_pago": "2026-03-25",
+     "dias_pago": 7,
+     "estado": "abierto",
+     "activo": true,
+     "id": 36,
+     "creado_en": "2026-10-28T20:59:14.620132",
+     "actualizado_en": "2026-10-28T20:59:14.620132",
+     "nombre": "Semanal 2026-12 (19/03 al 25/03/2026)"
+    },
+    {
+     "tipo_periodo": "quincenal",
+     "ejercicio": 2026,
+     "numero": 6,
+     "fecha_inicial": "2026-03-16",
+     "fecha_final": "2026-03-31",
+     "fecha_pago": "2026-03-31",
+     "dias_pago": 15,
+     "estado": "abierto",
+     "activo": true,
+     "id": 6,
+     "creado_en": "2026-10-28T20:59:14.615131",
+     "actualizado_en": "2026-10-28T20:59:14.615131",
+     "nombre": "Quincenal 2026-06 (16/03 al 31/03/2026)"
+    },
+    {
+     "tipo_periodo": "semanal",
+     "ejercicio": 2026,
+     "numero": 11,
+     "fecha_inicial": "2026-03-12",
+     "fecha_final": "2026-03-18",
+     "fecha_pago": "2026-03-18",
+     "dias_pago": 7,
+     "estado": "abierto",
+     "activo": true,
+     "id": 35,
+     "creado_en": "2026-10-28T20:59:14.620132",
+     "actualizado_en": "2026-10-28T20:59:14.620132",
+     "nombre": "Semanal 2026-11 (12/03 al 18/03/2026)"
+    },
+    {
+     "tipo_periodo": "semanal",
+     "ejercicio": 2026,
+     "numero": 10,
+     "fecha_inicial": "2026-03-05",
+     "fecha_final": "2026-03-11",
+     "fecha_pago": "2026-03-11",
+     "dias_pago": 7,
+     "estado": "abierto",
+     "activo": true,
+     "id": 34,
+     "creado_en": "2026-10-28T20:59:14.620132",
+     "actualizado_en": "2026-10-28T20:59:14.620132",
+     "nombre": "Semanal 2026-10 (05/03 al 11/03/2026)"
+    },
+    {
+     "tipo_periodo": "quincenal",
+     "ejercicio": 2026,
+     "numero": 5,
+     "fecha_inicial": "2026-03-01",
+     "fecha_final": "2026-03-15",
+     "fecha_pago": "2026-03-15",
+     "dias_pago": 15,
+     "estado": "abierto",
+     "activo": true,
+     "id": 5,
+     "creado_en": "2026-10-28T20:59:14.615131",
+     "actualizado_en": "2026-10-28T20:59:14.615131",
+     "nombre": "Quincenal 2026-05 (01/03 al 15/03/2026)"
+    },
+    {
+     "tipo_periodo": "semanal",
+     "ejercicio": 2026,
+     "numero": 9,
+     "fecha_inicial": "2026-02-26",
+     "fecha_final": "2026-03-04",
+     "fecha_pago": "2026-03-04",
+     "dias_pago": 7,
+     "estado": "abierto",
+     "activo": true,
+     "id": 33,
+     "creado_en": "2026-10-28T20:59:14.620132",
+     "actualizado_en": "2026-10-28T20:59:14.620132",
+     "nombre": "Semanal 2026-09 (26/02 al 04/03/2026)"
+    },
+    {
+     "tipo_periodo": "semanal",
+     "ejercicio": 2026,
+     "numero": 8,
+     "fecha_inicial": "2026-02-19",
+     "fecha_final": "2026-02-25",
+     "fecha_pago": "2026-02-25",
+     "dias_pago": 7,
+     "estado": "abierto",
+     "activo": true,
+     "id": 32,
+     "creado_en": "2026-10-28T20:59:14.620132",
+     "actualizado_en": "2026-10-28T20:59:14.620132",
+     "nombre": "Semanal 2026-08 (19/02 al 25/02/2026)"
+    },
+    {
+     "tipo_periodo": "quincenal",
+     "ejercicio": 2026,
+     "numero": 4,
+     "fecha_inicial": "2026-02-16",
+     "fecha_final": "2026-02-28",
+     "fecha_pago": "2026-02-28",
+     "dias_pago": 15,
+     "estado": "abierto",
+     "activo": true,
+     "id": 4,
+     "creado_en": "2026-10-28T20:59:14.615131",
+     "actualizado_en": "2026-10-28T20:59:14.615131",
+     "nombre": "Quincenal 2026-04 (16/02 al 28/02/2026)"
+    },
+    {
+     "tipo_periodo": "semanal",
+     "ejercicio": 2026,
+     "numero": 7,
+     "fecha_inicial": "2026-02-12",
+     "fecha_final": "2026-02-18",
+     "fecha_pago": "2026-02-18",
+     "dias_pago": 7,
+     "estado": "abierto",
+     "activo": true,
+     "id": 31,
+     "creado_en": "2026-10-28T20:59:14.620132",
+     "actualizado_en": "2026-10-28T20:59:14.620132",
+     "nombre": "Semanal 2026-07 (12/02 al 18/02/2026)"
+    },
+    {
+     "tipo_periodo": "semanal",
+     "ejercicio": 2026,
+     "numero": 6,
+     "fecha_inicial": "2026-02-05",
+     "fecha_final": "2026-02-11",
+     "fecha_pago": "2026-02-11",
+     "dias_pago": 7,
+     "estado": "abierto",
+     "activo": true,
+     "id": 30,
+     "creado_en": "2026-10-28T20:59:14.620132",
+     "actualizado_en": "2026-10-28T20:59:14.620132",
+     "nombre": "Semanal 2026-06 (05/02 al 11/02/2026)"
+    },
+    {
+     "tipo_periodo": "quincenal",
+     "ejercicio": 2026,
+     "numero": 3,
+     "fecha_inicial": "2026-02-01",
+     "fecha_final": "2026-02-15",
+     "fecha_pago": "2026-02-15",
+     "dias_pago": 15,
+     "estado": "abierto",
+     "activo": true,
+     "id": 3,
+     "creado_en": "2026-10-28T20:59:14.615131",
+     "actualizado_en": "2026-10-28T20:59:14.615131",
+     "nombre": "Quincenal 2026-03 (01/02 al 15/02/2026)"
+    },
+    {
+     "tipo_periodo": "semanal",
+     "ejercicio": 2026,
+     "numero": 5,
+     "fecha_inicial": "2026-01-29",
+     "fecha_final": "2026-02-04",
+     "fecha_pago": "2026-02-04",
+     "dias_pago": 7,
+     "estado": "abierto",
+     "activo": true,
+     "id": 29,
+     "creado_en": "2026-10-28T20:59:14.620132",
+     "actualizado_en": "2026-10-28T20:59:14.620132",
+     "nombre": "Semanal 2026-05 (29/01 al 04/02/2026)"
+    },
+    {
+     "tipo_periodo": "semanal",
+     "ejercicio": 2026,
+     "numero": 4,
+     "fecha_inicial": "2026-01-22",
+     "fecha_final": "2026-01-28",
+     "fecha_pago": "2026-01-28",
+     "dias_pago": 7,
+     "estado": "abierto",
+     "activo": true,
+     "id": 28,
+     "creado_en": "2026-10-28T20:59:14.620132",
+     "actualizado_en": "2026-10-28T20:59:14.620132",
+     "nombre": "Semanal 2026-04 (22/01 al 28/01/2026)"
+    },
+    {
+     "tipo_periodo": "quincenal",
+     "ejercicio": 2026,
+     "numero": 2,
+     "fecha_inicial": "2026-01-16",
+     "fecha_final": "2026-01-31",
+     "fecha_pago": "2026-01-31",
+     "dias_pago": 15,
+     "estado": "abierto",
+     "activo": true,
+     "id": 2,
+     "creado_en": "2026-10-28T20:59:14.615131",
+     "actualizado_en": "2026-10-28T20:59:14.615131",
+     "nombre": "Quincenal 2026-02 (16/01 al 31/01/2026)"
+    },
+    {
+     "tipo_periodo": "semanal",
+     "ejercicio": 2026,
+     "numero": 3,
+     "fecha_inicial": "2026-01-15",
+     "fecha_final": "2026-01-21",
+     "fecha_pago": "2026-01-21",
+     "dias_pago": 7,
+     "estado": "abierto",
+     "activo": true,
+     "id": 27,
+     "creado_en": "2026-10-28T20:59:14.620132",
+     "actualizado_en": "2026-10-28T20:59:14.620132",
+     "nombre": "Semanal 2026-03 (15/01 al 21/01/2026)"
+    },
+    {
+     "tipo_periodo": "semanal",
+     "ejercicio": 2026,
+     "numero": 2,
+     "fecha_inicial": "2026-01-08",
+     "fecha_final": "2026-01-14",
+     "fecha_pago": "2026-01-14",
+     "dias_pago": 7,
+     "estado": "abierto",
+     "activo": true,
+     "id": 26,
+     "creado_en": "2026-10-28T20:59:14.620132",
+     "actualizado_en": "2026-10-28T20:59:14.620132",
+     "nombre": "Semanal 2026-02 (08/01 al 14/01/2026)"
+    },
+    {
+     "tipo_periodo": "quincenal",
+     "ejercicio": 2026,
+     "numero": 1,
+     "fecha_inicial": "2026-01-01",
+     "fecha_final": "2026-01-15",
+     "fecha_pago": "2026-01-15",
+     "dias_pago": 15,
+     "estado": "abierto",
+     "activo": true,
+     "id": 1,
+     "creado_en": "2026-10-28T20:59:14.615131",
+     "actualizado_en": "2026-10-28T20:59:14.615131",
+     "nombre": "Quincenal 2026-01 (01/01 al 15/01/2026)"
+    },
+    {
+     "tipo_periodo": "semanal",
+     "ejercicio": 2026,
+     "numero": 1,
+     "fecha_inicial": "2026-01-01",
+     "fecha_final": "2026-01-07",
+     "fecha_pago": "2026-01-07",
+     "dias_pago": 7,
+     "estado": "abierto",
+     "activo": true,
+     "id": 25,
+     "creado_en": "2026-10-28T20:59:14.620132",
+     "actualizado_en": "2026-10-28T20:59:14.620132",
+     "nombre": "Semanal 2026-01 (01/01 al 07/01/2026)"
+    }
+   ],
+   "total": 77
+  },
+  "/api/conceptos": {
+   "items": [
+    {
+     "clave": "P001",
+     "nombre": "Sueldo",
+     "tipo": "percepcion",
+     "clave_sat": "001",
+     "gravable": true,
+     "tipo_calculo": "importe",
+     "fraccion_art110": null,
+     "codigo": "SUELDO",
+     "activo": true,
+     "id": 1,
+     "creado_en": "2026-10-28T20:59:14.585134",
+     "actualizado_en": "2026-10-28T20:59:14.585134",
+     "es_sistema": true,
+     "nombre_completo": "P001 - Sueldo"
+    },
+    {
+     "clave": "P002",
+     "nombre": "Vacaciones",
+     "tipo": "percepcion",
+     "clave_sat": "001",
+     "gravable": true,
+     "tipo_calculo": "importe",
+     "fraccion_art110": null,
+     "codigo": "VACACIONES",
+     "activo": true,
+     "id": 2,
+     "creado_en": "2026-10-28T20:59:14.585134",
+     "actualizado_en": "2026-10-28T20:59:14.585134",
+     "es_sistema": true,
+     "nombre_completo": "P002 - Vacaciones"
+    },
+    {
+     "clave": "P003",
+     "nombre": "Prima vacacional",
+     "tipo": "percepcion",
+     "clave_sat": "021",
+     "gravable": true,
+     "tipo_calculo": "importe",
+     "fraccion_art110": null,
+     "codigo": "PRIMA_VAC",
+     "activo": true,
+     "id": 3,
+     "creado_en": "2026-10-28T20:59:14.585134",
+     "actualizado_en": "2026-10-28T20:59:14.585134",
+     "es_sistema": true,
+     "nombre_completo": "P003 - Prima vacacional"
+    },
+    {
+     "clave": "P004",
+     "nombre": "Aguinaldo",
+     "tipo": "percepcion",
+     "clave_sat": "002",
+     "gravable": true,
+     "tipo_calculo": "importe",
+     "fraccion_art110": null,
+     "codigo": "AGUINALDO",
+     "activo": true,
+     "id": 4,
+     "creado_en": "2026-10-28T20:59:14.585134",
+     "actualizado_en": "2026-10-28T20:59:14.585134",
+     "es_sistema": true,
+     "nombre_completo": "P004 - Aguinaldo"
+    },
+    {
+     "clave": "P005",
+     "nombre": "Horas extra",
+     "tipo": "percepcion",
+     "clave_sat": "019",
+     "gravable": true,
+     "tipo_calculo": "horas_extra",
+     "fraccion_art110": null,
+     "codigo": "HORAS_EXTRA",
+     "activo": true,
+     "id": 5,
+     "creado_en": "2026-10-28T20:59:14.585134",
+     "actualizado_en": "2026-10-28T20:59:14.585134",
+     "es_sistema": false,
+     "nombre_completo": "P005 - Horas extra"
+    },
+    {
+     "clave": "P006",
+     "nombre": "Bono de productividad",
+     "tipo": "percepcion",
+     "clave_sat": "038",
+     "gravable": true,
+     "tipo_calculo": "importe",
+     "fraccion_art110": null,
+     "codigo": null,
+     "activo": true,
+     "id": 6,
+     "creado_en": "2026-10-28T20:59:14.585134",
+     "actualizado_en": "2026-10-28T20:59:14.585134",
+     "es_sistema": false,
+     "nombre_completo": "P006 - Bono de productividad"
+    },
+    {
+     "clave": "P007",
+     "nombre": "Premio de puntualidad",
+     "tipo": "percepcion",
+     "clave_sat": "010",
+     "gravable": true,
+     "tipo_calculo": "importe",
+     "fraccion_art110": null,
+     "codigo": null,
+     "activo": true,
+     "id": 7,
+     "creado_en": "2026-10-28T20:59:14.585134",
+     "actualizado_en": "2026-10-28T20:59:14.585134",
+     "es_sistema": false,
+     "nombre_completo": "P007 - Premio de puntualidad"
+    },
+    {
+     "clave": "P008",
+     "nombre": "Premio de asistencia",
+     "tipo": "percepcion",
+     "clave_sat": "049",
+     "gravable": true,
+     "tipo_calculo": "importe",
+     "fraccion_art110": null,
+     "codigo": null,
+     "activo": true,
+     "id": 8,
+     "creado_en": "2026-10-28T20:59:14.585134",
+     "actualizado_en": "2026-10-28T20:59:14.585134",
+     "es_sistema": false,
+     "nombre_completo": "P008 - Premio de asistencia"
+    },
+    {
+     "clave": "P009",
+     "nombre": "Vales de despensa",
+     "tipo": "percepcion",
+     "clave_sat": "029",
+     "gravable": false,
+     "tipo_calculo": "importe",
+     "fraccion_art110": null,
+     "codigo": null,
+     "activo": true,
+     "id": 9,
+     "creado_en": "2026-10-28T20:59:14.585134",
+     "actualizado_en": "2026-10-28T20:59:14.585134",
+     "es_sistema": false,
+     "nombre_completo": "P009 - Vales de despensa"
+    },
+    {
+     "clave": "D001",
+     "nombre": "ISR",
+     "tipo": "deduccion",
+     "clave_sat": "002",
+     "gravable": true,
+     "tipo_calculo": "importe",
+     "fraccion_art110": null,
+     "codigo": "ISR",
+     "activo": true,
+     "id": 10,
+     "creado_en": "2026-10-28T20:59:14.585134",
+     "actualizado_en": "2026-10-28T20:59:14.585134",
+     "es_sistema": true,
+     "nombre_completo": "D001 - ISR"
+    },
+    {
+     "clave": "D002",
+     "nombre": "Cuotas IMSS",
+     "tipo": "deduccion",
+     "clave_sat": "001",
+     "gravable": true,
+     "tipo_calculo": "importe",
+     "fraccion_art110": null,
+     "codigo": "IMSS",
+     "activo": true,
+     "id": 11,
+     "creado_en": "2026-10-28T20:59:14.585134",
+     "actualizado_en": "2026-10-28T20:59:14.585134",
+     "es_sistema": true,
+     "nombre_completo": "D002 - Cuotas IMSS"
+    },
+    {
+     "clave": "D003",
+     "nombre": "Crédito Infonavit",
+     "tipo": "deduccion",
+     "clave_sat": "010",
+     "gravable": true,
+     "tipo_calculo": "importe",
+     "fraccion_art110": "III",
+     "codigo": "INFONAVIT",
+     "activo": true,
+     "id": 12,
+     "creado_en": "2026-10-28T20:59:14.585134",
+     "actualizado_en": "2026-10-28T20:59:14.585134",
+     "es_sistema": true,
+     "nombre_completo": "D003 - Crédito Infonavit"
+    },
+    {
+     "clave": "D004",
+     "nombre": "Préstamo de la empresa",
+     "tipo": "deduccion",
+     "clave_sat": "004",
+     "gravable": true,
+     "tipo_calculo": "importe",
+     "fraccion_art110": "I",
+     "codigo": null,
+     "activo": true,
+     "id": 13,
+     "creado_en": "2026-10-28T20:59:14.585134",
+     "actualizado_en": "2026-10-28T20:59:14.585134",
+     "es_sistema": false,
+     "nombre_completo": "D004 - Préstamo de la empresa"
+    },
+    {
+     "clave": "D005",
+     "nombre": "Anticipo de sueldo",
+     "tipo": "deduccion",
+     "clave_sat": "012",
+     "gravable": true,
+     "tipo_calculo": "importe",
+     "fraccion_art110": "I",
+     "codigo": null,
+     "activo": true,
+     "id": 14,
+     "creado_en": "2026-10-28T20:59:14.585134",
+     "actualizado_en": "2026-10-28T20:59:14.585134",
+     "es_sistema": false,
+     "nombre_completo": "D005 - Anticipo de sueldo"
+    },
+    {
+     "clave": "D006",
+     "nombre": "Pensión alimenticia",
+     "tipo": "deduccion",
+     "clave_sat": "007",
+     "gravable": true,
+     "tipo_calculo": "porcentaje",
+     "fraccion_art110": "V",
+     "codigo": null,
+     "activo": true,
+     "id": 15,
+     "creado_en": "2026-10-28T20:59:14.585134",
+     "actualizado_en": "2026-10-28T20:59:14.585134",
+     "es_sistema": false,
+     "nombre_completo": "D006 - Pensión alimenticia"
+    },
+    {
+     "clave": "D007",
+     "nombre": "Crédito Fonacot",
+     "tipo": "deduccion",
+     "clave_sat": "011",
+     "gravable": true,
+     "tipo_calculo": "importe",
+     "fraccion_art110": "VII",
+     "codigo": null,
+     "activo": true,
+     "id": 16,
+     "creado_en": "2026-10-28T20:59:14.585134",
+     "actualizado_en": "2026-10-28T20:59:14.585134",
+     "es_sistema": false,
+     "nombre_completo": "D007 - Crédito Fonacot"
+    },
+    {
+     "clave": "D008",
+     "nombre": "Cuota sindical",
+     "tipo": "deduccion",
+     "clave_sat": "019",
+     "gravable": true,
+     "tipo_calculo": "importe",
+     "fraccion_art110": "VI",
+     "codigo": null,
+     "activo": true,
+     "id": 17,
+     "creado_en": "2026-10-28T20:59:14.585134",
+     "actualizado_en": "2026-10-28T20:59:14.585134",
+     "es_sistema": false,
+     "nombre_completo": "D008 - Cuota sindical"
+    },
+    {
+     "clave": "D009",
+     "nombre": "Caja de ahorro",
+     "tipo": "deduccion",
+     "clave_sat": "004",
+     "gravable": true,
+     "tipo_calculo": "importe",
+     "fraccion_art110": "IV",
+     "codigo": null,
+     "activo": true,
+     "id": 18,
+     "creado_en": "2026-10-28T20:59:14.585134",
+     "actualizado_en": "2026-10-28T20:59:14.585134",
+     "es_sistema": false,
+     "nombre_completo": "D009 - Caja de ahorro"
+    }
+   ],
+   "total": 18
+  },
+  "/api/festivos": {
+   "items": [
+    {
+     "fecha": "2026-01-01",
+     "descripcion": "Año nuevo",
+     "id": 1,
+     "creado_en": "2026-10-28T20:59:14.602129",
+     "actualizado_en": "2026-10-28T20:59:14.602129"
+    },
+    {
+     "fecha": "2026-02-02",
+     "descripcion": "Día de la Constitución",
+     "id": 2,
+     "creado_en": "2026-10-28T20:59:14.602129",
+     "actualizado_en": "2026-10-28T20:59:14.602129"
+    },
+    {
+     "fecha": "2026-03-16",
+     "descripcion": "Natalicio de Benito Juárez",
+     "id": 3,
+     "creado_en": "2026-10-28T20:59:14.602129",
+     "actualizado_en": "2026-10-28T20:59:14.602129"
+    },
+    {
+     "fecha": "2026-05-01",
+     "descripcion": "Día del Trabajo",
+     "id": 4,
+     "creado_en": "2026-10-28T20:59:14.602129",
+     "actualizado_en": "2026-10-28T20:59:14.602129"
+    },
+    {
+     "fecha": "2026-09-16",
+     "descripcion": "Día de la Independencia",
+     "id": 5,
+     "creado_en": "2026-10-28T20:59:14.602129",
+     "actualizado_en": "2026-10-28T20:59:14.602129"
+    },
+    {
+     "fecha": "2026-11-16",
+     "descripcion": "Día de la Revolución",
+     "id": 6,
+     "creado_en": "2026-10-28T20:59:14.602129",
+     "actualizado_en": "2026-10-28T20:59:14.602129"
+    },
+    {
+     "fecha": "2026-12-25",
+     "descripcion": "Navidad",
+     "id": 7,
+     "creado_en": "2026-10-28T20:59:14.602129",
+     "actualizado_en": "2026-10-28T20:59:14.602129"
+    }
+   ],
+   "total": 7
+  },
+  "/api/movimientos": {
+   "items": [
+    {
+     "empleado_id": 1,
+     "concepto_id": 13,
+     "periodo_id": 20,
+     "recurrente": false,
+     "cantidad": 1.0,
+     "monto": 100.0,
+     "descripcion": null,
+     "activo": true,
+     "id": 5,
+     "creado_en": "2026-10-28T20:59:15.650564",
+     "actualizado_en": "2026-10-28T20:59:15.650564",
+     "tipo": "deduccion",
+     "concepto": "Préstamo de la empresa",
+     "tipo_calculo": "importe",
+     "empleado": "Laura Hernández Ruiz",
+     "periodo": "Quincenal 2026-20 (16/10 al 31/10/2026)"
+    }
+   ],
+   "total": 1
+  },
+  "/api/infonavit": {
+   "items": [
+    {
+     "empleado_id": 1,
+     "numero_credito": "123",
+     "tipo_descuento": "cuota_fija",
+     "valor_descuento": 500.0,
+     "fecha_inicio": "2025-01-01",
+     "activo": true,
+     "id": 1,
+     "creado_en": "2026-10-28T20:59:15.664375",
+     "actualizado_en": "2026-10-28T20:59:15.664375",
+     "empleado": "Laura Hernández Ruiz",
+     "tipo_descuento_nombre": "Cuota fija mensual",
+     "descuento_periodo": 246.71
+    }
+   ],
+   "total": 1
+  },
+  "/api/solicitudes": {
+   "items": [
+    {
+     "empleado_id": 1,
+     "tipo": "permiso_con_goce",
+     "fecha_inicial": "2027-03-02",
+     "fecha_final": "2027-03-02",
+     "dias": 1,
+     "motivo": "Trámite",
+     "estado": "pendiente",
+     "comentario_resolucion": null,
+     "resuelto_por_id": null,
+     "resuelto_en": null,
+     "id": 1,
+     "creado_en": "2026-10-28T20:59:15.688397",
+     "actualizado_en": "2026-10-28T20:59:15.688397",
+     "empleado": "Laura Hernández Ruiz",
+     "tipo_nombre": "Permiso con goce",
+     "resuelto_por": null
+    }
+   ],
+   "total": 1
+  },
+  "/api/incidencias": {
+   "items": [
+    {
+     "empleado_id": 1,
+     "tipo": "falta",
+     "fecha_inicial": "2026-10-28",
+     "fecha_final": "2026-10-28",
+     "dias": 1,
+     "justificada": false,
+     "folio": null,
+     "tipo_incapacidad": null,
+     "observaciones": null,
+     "id": 1,
+     "creado_en": "2026-10-28T20:59:15.675394",
+     "actualizado_en": "2026-10-28T20:59:15.675394",
+     "empleado": "Laura Hernández Ruiz",
+     "tipo_nombre": "Falta",
+     "tipo_incapacidad_nombre": null
+    }
+   ],
+   "total": 1
+  },
+  "/api/nomina": {
+   "tipo_periodo": "quincenal",
+   "tipo": "ordinaria",
+   "periodos": [
+    {
+     "id": 1,
+     "nombre": "Quincenal 2026-01 (01/01 al 15/01/2026)",
+     "estado": "abierto"
+    },
+    {
+     "id": 2,
+     "nombre": "Quincenal 2026-02 (16/01 al 31/01/2026)",
+     "estado": "abierto"
+    },
+    {
+     "id": 3,
+     "nombre": "Quincenal 2026-03 (01/02 al 15/02/2026)",
+     "estado": "abierto"
+    },
+    {
+     "id": 4,
+     "nombre": "Quincenal 2026-04 (16/02 al 28/02/2026)",
+     "estado": "abierto"
+    },
+    {
+     "id": 5,
+     "nombre": "Quincenal 2026-05 (01/03 al 15/03/2026)",
+     "estado": "abierto"
+    },
+    {
+     "id": 6,
+     "nombre": "Quincenal 2026-06 (16/03 al 31/03/2026)",
+     "estado": "abierto"
+    },
+    {
+     "id": 7,
+     "nombre": "Quincenal 2026-07 (01/04 al 15/04/2026)",
+     "estado": "abierto"
+    },
+    {
+     "id": 8,
+     "nombre": "Quincenal 2026-08 (16/04 al 30/04/2026)",
+     "estado": "abierto"
+    },
+    {
+     "id": 9,
+     "nombre": "Quincenal 2026-09 (01/05 al 15/05/2026)",
+     "estado": "abierto"
+    },
+    {
+     "id": 10,
+     "nombre": "Quincenal 2026-10 (16/05 al 31/05/2026)",
+     "estado": "abierto"
+    },
+    {
+     "id": 11,
+     "nombre": "Quincenal 2026-11 (01/06 al 15/06/2026)",
+     "estado": "abierto"
+    },
+    {
+     "id": 12,
+     "nombre": "Quincenal 2026-12 (16/06 al 30/06/2026)",
+     "estado": "abierto"
+    },
+    {
+     "id": 13,
+     "nombre": "Quincenal 2026-13 (01/07 al 15/07/2026)",
+     "estado": "abierto"
+    },
+    {
+     "id": 14,
+     "nombre": "Quincenal 2026-14 (16/07 al 31/07/2026)",
+     "estado": "abierto"
+    },
+    {
+     "id": 15,
+     "nombre": "Quincenal 2026-15 (01/08 al 15/08/2026)",
+     "estado": "abierto"
+    },
+    {
+     "id": 16,
+     "nombre": "Quincenal 2026-16 (16/08 al 31/08/2026)",
+     "estado": "abierto"
+    },
+    {
+     "id": 17,
+     "nombre": "Quincenal 2026-17 (01/09 al 15/09/2026)",
+     "estado": "abierto"
+    },
+    {
+     "id": 18,
+     "nombre": "Quincenal 2026-18 (16/09 al 30/09/2026)",
+     "estado": "abierto"
+    },
+    {
+     "id": 19,
+     "nombre": "Quincenal 2026-19 (01/10 al 15/10/2026)",
+     "estado": "abierto"
+    },
+    {
+     "id": 20,
+     "nombre": "Quincenal 2026-20 (16/10 al 31/10/2026)",
+     "estado": "abierto"
+    },
+    {
+     "id": 21,
+     "nombre": "Quincenal 2026-21 (01/11 al 15/11/2026)",
+     "estado": "abierto"
+    },
+    {
+     "id": 22,
+     "nombre": "Quincenal 2026-22 (16/11 al 30/11/2026)",
+     "estado": "abierto"
+    },
+    {
+     "id": 23,
+     "nombre": "Quincenal 2026-23 (01/12 al 15/12/2026)",
+     "estado": "abierto"
+    },
+    {
+     "id": 24,
+     "nombre": "Quincenal 2026-24 (16/12 al 31/12/2026)",
+     "estado": "abierto"
+    }
+   ],
+   "periodo": {
+    "tipo_periodo": "quincenal",
+    "ejercicio": 2026,
+    "numero": 20,
+    "fecha_inicial": "2026-10-16",
+    "fecha_final": "2026-10-31",
+    "fecha_pago": "2026-10-31",
+    "dias_pago": 15,
+    "estado": "abierto",
+    "activo": true,
+    "id": 20,
+    "creado_en": "2026-10-28T20:59:14.615131",
+    "actualizado_en": "2026-10-28T20:59:14.615131",
+    "nombre": "Quincenal 2026-20 (16/10 al 31/10/2026)"
+   },
+   "nomina": {
+    "periodo_id": 20,
+    "tipo": "ordinaria",
+    "estado": "abierta",
+    "fecha_calculo": "2026-10-28T20:59:15.746950",
+    "num_empleados": 3,
+    "total_percepciones": 35200.0,
+    "total_deducciones": 5938.74,
+    "total_neto": 29261.26,
+    "id": 1,
+    "creado_en": "2026-10-28T20:59:15.696935",
+    "actualizado_en": "2026-10-28T20:59:15.747938",
+    "periodo": "Quincenal 2026-20 (16/10 al 31/10/2026)",
+    "tipo_periodo": "quincenal",
+    "num_publicados": 3,
+    "num_firmados": 0
+   },
+   "empleados": [
+    {
+     "empleado_id": 1,
+     "numero_empleado": "E001",
+     "nombre": "Laura Hernández Ruiz",
+     "departamento": "Sistemas",
+     "salario_diario": 650.0,
+     "recibo": {
+      "nomina_id": 1,
+      "empleado_id": 1,
+      "estado": "publicado",
+      "editado": false,
+      "salario_diario": 650.0,
+      "sdi": 686.51,
+      "dias_periodo": 15.0,
+      "dias_pagados": 14.0,
+      "dias_cotizados": 14.0,
+      "faltas": 1,
+      "dias_incapacidad": 0,
+      "dias_vacaciones": 0,
+      "dias_permiso_sin_goce": 0,
+      "total_gravado": 9550.0,
+      "total_exento": 500.0,
+      "total_percepciones": 10050.0,
+      "total_deducciones": 1783.15,
+      "isr_causado": 1205.88,
+      "subsidio_causado": 0.0,
+      "subsidio_aplicado": 0.0,
+      "neto": 8266.85,
+      "publicado_en": "2026-10-28T20:59:15.763947",
+      "firmado_en": null,
+      "id": 1,
+      "creado_en": "2026-10-28T20:59:15.711939",
+      "actualizado_en": "2026-10-28T20:59:15.764941",
+      "empleado": "Laura Hernández Ruiz",
+      "numero_empleado": "E001",
+      "periodo": "Quincenal 2026-20 (16/10 al 31/10/2026)",
+      "periodo_id": 20,
+      "tipo_nomina": "ordinaria",
+      "fecha_pago": "2026-10-31",
+      "editable": true,
+      "aclaraciones_pendientes": 1,
+      "firmado": false
+     }
+    },
+    {
+     "empleado_id": 3,
+     "numero_empleado": "E003",
+     "nombre": "Carlos Gómez Pérez",
+     "departamento": "Sistemas",
+     "salario_diario": 890.0,
+     "recibo": {
+      "nomina_id": 1,
+      "empleado_id": 3,
+      "estado": "publicado",
+      "editado": false,
+      "salario_diario": 890.0,
+      "sdi": 939.99,
+      "dias_periodo": 15.0,
+      "dias_pagados": 15.0,
+      "dias_cotizados": 15.0,
+      "faltas": 0,
+      "dias_incapacidad": 0,
+      "dias_vacaciones": 0,
+      "dias_permiso_sin_goce": 0,
+      "total_gravado": 13350.0,
+      "total_exento": 500.0,
+      "total_percepciones": 13850.0,
+      "total_deducciones": 2387.7,
+      "isr_causado": 2017.56,
+      "subsidio_causado": 0.0,
+      "subsidio_aplicado": 0.0,
+      "neto": 11462.3,
+      "publicado_en": "2026-10-28T20:59:15.763947",
+      "firmado_en": null,
+      "id": 2,
+      "creado_en": "2026-10-28T20:59:15.733941",
+      "actualizado_en": "2026-10-28T20:59:15.764941",
+      "empleado": "Carlos Gómez Pérez",
+      "numero_empleado": "E003",
+      "periodo": "Quincenal 2026-20 (16/10 al 31/10/2026)",
+      "periodo_id": 20,
+      "tipo_nomina": "ordinaria",
+      "fecha_pago": "2026-10-31",
+      "editable": true,
+      "aclaraciones_pendientes": 0,
+      "firmado": false
+     }
+    },
+    {
+     "empleado_id": 4,
+     "numero_empleado": "E004",
+     "nombre": "Ana Martínez López",
+     "departamento": "Recursos Humanos",
+     "salario_diario": 720.0,
+     "recibo": {
+      "nomina_id": 1,
+      "empleado_id": 4,
+      "estado": "publicado",
+      "editado": false,
+      "salario_diario": 720.0,
+      "sdi": 759.45,
+      "dias_periodo": 15.0,
+      "dias_pagados": 15.0,
+      "dias_cotizados": 15.0,
+      "faltas": 0,
+      "dias_incapacidad": 0,
+      "dias_vacaciones": 0,
+      "dias_permiso_sin_goce": 0,
+      "total_gravado": 10800.0,
+      "total_exento": 500.0,
+      "total_percepciones": 11300.0,
+      "total_deducciones": 1767.89,
+      "isr_causado": 1472.88,
+      "subsidio_causado": 0.0,
+      "subsidio_aplicado": 0.0,
+      "neto": 9532.11,
+      "publicado_en": "2026-10-28T20:59:15.763947",
+      "firmado_en": null,
+      "id": 3,
+      "creado_en": "2026-10-28T20:59:15.741941",
+      "actualizado_en": "2026-10-28T20:59:15.764941",
+      "empleado": "Ana Martínez López",
+      "numero_empleado": "E004",
+      "periodo": "Quincenal 2026-20 (16/10 al 31/10/2026)",
+      "periodo_id": 20,
+      "tipo_nomina": "ordinaria",
+      "fecha_pago": "2026-10-31",
+      "editable": true,
+      "aclaraciones_pendientes": 0,
+      "firmado": false
+     }
+    }
+   ],
+   "parametros": {
+    "ejercicio": 2026,
+    "uma_diaria": 117.31,
+    "salario_minimo": 315.04,
+    "subsidio_mensual": 492.14
+   }
+  },
+  "/api/nomina/historial": {
+   "items": [
+    {
+     "periodo_id": 20,
+     "tipo": "ordinaria",
+     "estado": "abierta",
+     "fecha_calculo": "2026-10-28T20:59:15.746950",
+     "num_empleados": 3,
+     "total_percepciones": 35200.0,
+     "total_deducciones": 5938.74,
+     "total_neto": 29261.26,
+     "id": 1,
+     "creado_en": "2026-10-28T20:59:15.696935",
+     "actualizado_en": "2026-10-28T20:59:15.747938",
+     "periodo": "Quincenal 2026-20 (16/10 al 31/10/2026)",
+     "tipo_periodo": "quincenal",
+     "num_publicados": 3,
+     "num_firmados": 0
+    }
+   ],
+   "total": 1
+  },
+  "/api/recibos/1": {
+   "nomina_id": 1,
+   "empleado_id": 1,
+   "estado": "publicado",
+   "editado": false,
+   "salario_diario": 650.0,
+   "sdi": 686.51,
+   "dias_periodo": 15.0,
+   "dias_pagados": 14.0,
+   "dias_cotizados": 14.0,
+   "faltas": 1,
+   "dias_incapacidad": 0,
+   "dias_vacaciones": 0,
+   "dias_permiso_sin_goce": 0,
+   "total_gravado": 9550.0,
+   "total_exento": 500.0,
+   "total_percepciones": 10050.0,
+   "total_deducciones": 1783.15,
+   "isr_causado": 1205.88,
+   "subsidio_causado": 0.0,
+   "subsidio_aplicado": 0.0,
+   "neto": 8266.85,
+   "publicado_en": "2026-10-28T20:59:15.763947",
+   "firmado_en": null,
+   "id": 1,
+   "creado_en": "2026-10-28T20:59:15.711939",
+   "actualizado_en": "2026-10-28T20:59:15.764941",
+   "empleado": "Laura Hernández Ruiz",
+   "numero_empleado": "E001",
+   "periodo": "Quincenal 2026-20 (16/10 al 31/10/2026)",
+   "periodo_id": 20,
+   "tipo_nomina": "ordinaria",
+   "fecha_pago": "2026-10-31",
+   "editable": true,
+   "aclaraciones_pendientes": 1,
+   "firmado": false,
+   "departamento": "Sistemas",
+   "percepciones": [
+    {
+     "recibo_id": 1,
+     "concepto_id": 1,
+     "codigo": "SUELDO",
+     "tipo": "percepcion",
+     "clave": "P001",
+     "clave_sat": "001",
+     "nombre": "Sueldo",
+     "cantidad": 14.0,
+     "gravado": 9100.0,
+     "exento": 0.0,
+     "importe": 9100.0,
+     "id": 1
+    },
+    {
+     "recibo_id": 1,
+     "concepto_id": 8,
+     "codigo": null,
+     "tipo": "percepcion",
+     "clave": "P008",
+     "clave_sat": "049",
+     "nombre": "Premio de asistencia",
+     "cantidad": 1.0,
+     "gravado": 450.0,
+     "exento": 0.0,
+     "importe": 450.0,
+     "id": 2
+    },
+    {
+     "recibo_id": 1,
+     "concepto_id": 9,
+     "codigo": null,
+     "tipo": "percepcion",
+     "clave": "P009",
+     "clave_sat": "029",
+     "nombre": "Vales de despensa",
+     "cantidad": 1.0,
+     "gravado": 0.0,
+     "exento": 500.0,
+     "importe": 500.0,
+     "id": 3
+    }
+   ],
+   "deducciones": [
+    {
+     "recibo_id": 1,
+     "concepto_id": 10,
+     "codigo": "ISR",
+     "tipo": "deduccion",
+     "clave": "D001",
+     "clave_sat": "002",
+     "nombre": "ISR",
+     "cantidad": 1.0,
+     "gravado": 0.0,
+     "exento": 0.0,
+     "importe": 1205.88,
+     "id": 4
+    },
+    {
+     "recibo_id": 1,
+     "concepto_id": 11,
+     "codigo": "IMSS",
+     "tipo": "deduccion",
+     "clave": "D002",
+     "clave_sat": "001",
+     "nombre": "Cuotas IMSS",
+     "cantidad": 14.0,
+     "gravado": 0.0,
+     "exento": 0.0,
+     "importe": 247.01,
+     "id": 5
+    },
+    {
+     "recibo_id": 1,
+     "concepto_id": 12,
+     "codigo": "INFONAVIT",
+     "tipo": "deduccion",
+     "clave": "D003",
+     "clave_sat": "010",
+     "nombre": "Crédito Infonavit",
+     "cantidad": 14.0,
+     "gravado": 0.0,
+     "exento": 0.0,
+     "importe": 230.26,
+     "id": 6
+    },
+    {
+     "recibo_id": 1,
+     "concepto_id": 13,
+     "codigo": null,
+     "tipo": "deduccion",
+     "clave": "D004",
+     "clave_sat": "004",
+     "nombre": "Préstamo de la empresa",
+     "cantidad": 1.0,
+     "gravado": 0.0,
+     "exento": 0.0,
+     "importe": 100.0,
+     "id": 7
+    }
+   ],
+   "aclaraciones": [
+    {
+     "recibo_id": 1,
+     "mensaje": "No veo mi bono de asistencia en este periodo.",
+     "estado": "pendiente",
+     "respuesta": null,
+     "atendida_por_id": null,
+     "atendida_en": null,
+     "id": 1,
+     "creado_en": "2026-10-28T20:59:15.781946",
+     "actualizado_en": "2026-10-28T20:59:15.781946",
+     "empleado": "Laura Hernández Ruiz",
+     "periodo": "Quincenal 2026-20 (16/10 al 31/10/2026)",
+     "neto": 8266.85,
+     "atendida_por": null
+    }
+   ]
+  },
+  "/api/aclaraciones": {
+   "items": [
+    {
+     "recibo_id": 1,
+     "mensaje": "No veo mi bono de asistencia en este periodo.",
+     "estado": "pendiente",
+     "respuesta": null,
+     "atendida_por_id": null,
+     "atendida_en": null,
+     "id": 1,
+     "creado_en": "2026-10-28T20:59:15.781946",
+     "actualizado_en": "2026-10-28T20:59:15.781946",
+     "empleado": "Laura Hernández Ruiz",
+     "periodo": "Quincenal 2026-20 (16/10 al 31/10/2026)",
+     "neto": 8266.85,
+     "atendida_por": null
+    }
+   ],
+   "total": 1
+  },
+  "/api/configuracion": {
+   "razon_social": "Mi Empresa S.A. de C.V.",
+   "rfc": null,
+   "registro_patronal": null,
+   "zona_salario": "general",
+   "dias_aguinaldo": 15,
+   "prima_vacacional_pct": 25.0,
+   "id": 1,
+   "creado_en": "2026-10-28T20:59:14.599129",
+   "actualizado_en": "2026-10-28T20:59:14.599129"
+  },
+  "/api/configuracion/parametros": {
+   "items": [
+    {
+     "ejercicio": 2026,
+     "uma_diaria": 117.31,
+     "salario_minimo": 315.04,
+     "salario_minimo_frontera": 440.87,
+     "subsidio_pct_uma": 13.8,
+     "subsidio_limite_mensual": 10171.0,
+     "id": 3,
+     "creado_en": "2026-10-28T20:59:14.590131",
+     "actualizado_en": "2026-10-28T20:59:14.590131"
+    },
+    {
+     "ejercicio": 2025,
+     "uma_diaria": 113.14,
+     "salario_minimo": 278.8,
+     "salario_minimo_frontera": 419.88,
+     "subsidio_pct_uma": 13.8,
+     "subsidio_limite_mensual": 10171.0,
+     "id": 2,
+     "creado_en": "2026-10-28T20:59:14.590131",
+     "actualizado_en": "2026-10-28T20:59:14.590131"
+    },
+    {
+     "ejercicio": 2024,
+     "uma_diaria": 108.57,
+     "salario_minimo": 248.93,
+     "salario_minimo_frontera": 374.89,
+     "subsidio_pct_uma": 11.82,
+     "subsidio_limite_mensual": 9081.0,
+     "id": 1,
+     "creado_en": "2026-10-28T20:59:14.590131",
+     "actualizado_en": "2026-10-28T20:59:14.590131"
+    }
+   ],
+   "total": 3
+  },
+  "/api/configuracion/tarifa-isr": {
+   "ejercicio": 2023,
+   "renglones": [
+    {
+     "ejercicio": 2023,
+     "limite_inferior": 0.01,
+     "cuota_fija": 0.0,
+     "porcentaje": 1.92,
+     "id": 1,
+     "creado_en": "2026-10-28T20:59:14.595133",
+     "actualizado_en": "2026-10-28T20:59:14.595133"
+    },
+    {
+     "ejercicio": 2023,
+     "limite_inferior": 746.05,
+     "cuota_fija": 14.32,
+     "porcentaje": 6.4,
+     "id": 2,
+     "creado_en": "2026-10-28T20:59:14.595133",
+     "actualizado_en": "2026-10-28T20:59:14.595133"
+    },
+    {
+     "ejercicio": 2023,
+     "limite_inferior": 6332.06,
+     "cuota_fija": 371.83,
+     "porcentaje": 10.88,
+     "id": 3,
+     "creado_en": "2026-10-28T20:59:14.595133",
+     "actualizado_en": "2026-10-28T20:59:14.595133"
+    },
+    {
+     "ejercicio": 2023,
+     "limite_inferior": 11128.02,
+     "cuota_fija": 893.63,
+     "porcentaje": 16.0,
+     "id": 4,
+     "creado_en": "2026-10-28T20:59:14.595133",
+     "actualizado_en": "2026-10-28T20:59:14.595133"
+    },
+    {
+     "ejercicio": 2023,
+     "limite_inferior": 12935.83,
+     "cuota_fija": 1182.88,
+     "porcentaje": 17.92,
+     "id": 5,
+     "creado_en": "2026-10-28T20:59:14.595133",
+     "actualizado_en": "2026-10-28T20:59:14.595133"
+    },
+    {
+     "ejercicio": 2023,
+     "limite_inferior": 15487.72,
+     "cuota_fija": 1640.18,
+     "porcentaje": 21.36,
+     "id": 6,
+     "creado_en": "2026-10-28T20:59:14.595133",
+     "actualizado_en": "2026-10-28T20:59:14.595133"
+    },
+    {
+     "ejercicio": 2023,
+     "limite_inferior": 31236.5,
+     "cuota_fija": 5004.12,
+     "porcentaje": 23.52,
+     "id": 7,
+     "creado_en": "2026-10-28T20:59:14.595133",
+     "actualizado_en": "2026-10-28T20:59:14.595133"
+    },
+    {
+     "ejercicio": 2023,
+     "limite_inferior": 49233.01,
+     "cuota_fija": 9236.89,
+     "porcentaje": 30.0,
+     "id": 8,
+     "creado_en": "2026-10-28T20:59:14.595133",
+     "actualizado_en": "2026-10-28T20:59:14.595133"
+    },
+    {
+     "ejercicio": 2023,
+     "limite_inferior": 93993.91,
+     "cuota_fija": 22665.17,
+     "porcentaje": 32.0,
+     "id": 9,
+     "creado_en": "2026-10-28T20:59:14.595133",
+     "actualizado_en": "2026-10-28T20:59:14.595133"
+    },
+    {
+     "ejercicio": 2023,
+     "limite_inferior": 125325.21,
+     "cuota_fija": 32691.18,
+     "porcentaje": 34.0,
+     "id": 10,
+     "creado_en": "2026-10-28T20:59:14.595133",
+     "actualizado_en": "2026-10-28T20:59:14.595133"
+    },
+    {
+     "ejercicio": 2023,
+     "limite_inferior": 375975.62,
+     "cuota_fija": 117912.32,
+     "porcentaje": 35.0,
+     "id": 11,
+     "creado_en": "2026-10-28T20:59:14.595133",
+     "actualizado_en": "2026-10-28T20:59:14.595133"
+    }
+   ],
+   "ejercicios": [
+    2023
+   ]
+  },
+  "POST /api/auth/login": {
+   "access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc5MzIyMTE1NSwianRpIjoiN2UzZTg1MDMtY2E3MS00ZDNmLWIxMzEtNjNhOTk5ODNmZDdiIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjEiLCJuYmYiOjE3OTMyMjExNTUsImNzcmYiOiJlYmUxZmRjYS01N2I0LTQ3MDAtODBiOC1kMGVhN2QwYTk5ZWYiLCJleHAiOjE3OTMyNDk5NTV9.jmZj-pt1NTvQju2xY7FxuJInXXjdr-K8NqdzKhtW6kg",
+   "usuario": {
+    "nombre_usuario": "admin",
+    "rol_id": 1,
+    "activo": true,
+    "solicita_restablecer": false,
+    "ultimo_acceso": "2026-10-28T20:59:15.535875",
+    "id": 1,
+    "creado_en": "2026-10-28T20:59:14.581131",
+    "actualizado_en": "2026-10-28T20:59:15.536878",
+    "rol": "Administrador",
+    "empleado_id": null,
+    "empleado": null,
+    "privilegios": [
+     "catalogos",
+     "configuracion",
+     "deducciones",
+     "empleados",
+     "incidencias",
+     "nomina",
+     "percepciones",
+     "portal",
+     "recibos",
+     "usuarios",
+     "vacaciones"
+    ]
+   }
+  },
+  "POST /api/nomina/calcular": {
+   "resumen": {
+    "calculados": 3,
+    "omitidos": []
+   },
+   "vista": {
+    "tipo_periodo": "quincenal",
+    "tipo": "ordinaria",
+    "periodos": [
+     {
+      "id": 1,
+      "nombre": "Quincenal 2026-01 (01/01 al 15/01/2026)",
+      "estado": "abierto"
+     },
+     {
+      "id": 2,
+      "nombre": "Quincenal 2026-02 (16/01 al 31/01/2026)",
+      "estado": "abierto"
+     },
+     {
+      "id": 3,
+      "nombre": "Quincenal 2026-03 (01/02 al 15/02/2026)",
+      "estado": "abierto"
+     },
+     {
+      "id": 4,
+      "nombre": "Quincenal 2026-04 (16/02 al 28/02/2026)",
+      "estado": "abierto"
+     },
+     {
+      "id": 5,
+      "nombre": "Quincenal 2026-05 (01/03 al 15/03/2026)",
+      "estado": "abierto"
+     },
+     {
+      "id": 6,
+      "nombre": "Quincenal 2026-06 (16/03 al 31/03/2026)",
+      "estado": "abierto"
+     },
+     {
+      "id": 7,
+      "nombre": "Quincenal 2026-07 (01/04 al 15/04/2026)",
+      "estado": "abierto"
+     },
+     {
+      "id": 8,
+      "nombre": "Quincenal 2026-08 (16/04 al 30/04/2026)",
+      "estado": "abierto"
+     },
+     {
+      "id": 9,
+      "nombre": "Quincenal 2026-09 (01/05 al 15/05/2026)",
+      "estado": "abierto"
+     },
+     {
+      "id": 10,
+      "nombre": "Quincenal 2026-10 (16/05 al 31/05/2026)",
+      "estado": "abierto"
+     },
+     {
+      "id": 11,
+      "nombre": "Quincenal 2026-11 (01/06 al 15/06/2026)",
+      "estado": "abierto"
+     },
+     {
+      "id": 12,
+      "nombre": "Quincenal 2026-12 (16/06 al 30/06/2026)",
+      "estado": "abierto"
+     },
+     {
+      "id": 13,
+      "nombre": "Quincenal 2026-13 (01/07 al 15/07/2026)",
+      "estado": "abierto"
+     },
+     {
+      "id": 14,
+      "nombre": "Quincenal 2026-14 (16/07 al 31/07/2026)",
+      "estado": "abierto"
+     },
+     {
+      "id": 15,
+      "nombre": "Quincenal 2026-15 (01/08 al 15/08/2026)",
+      "estado": "abierto"
+     },
+     {
+      "id": 16,
+      "nombre": "Quincenal 2026-16 (16/08 al 31/08/2026)",
+      "estado": "abierto"
+     },
+     {
+      "id": 17,
+      "nombre": "Quincenal 2026-17 (01/09 al 15/09/2026)",
+      "estado": "abierto"
+     },
+     {
+      "id": 18,
+      "nombre": "Quincenal 2026-18 (16/09 al 30/09/2026)",
+      "estado": "abierto"
+     },
+     {
+      "id": 19,
+      "nombre": "Quincenal 2026-19 (01/10 al 15/10/2026)",
+      "estado": "abierto"
+     },
+     {
+      "id": 20,
+      "nombre": "Quincenal 2026-20 (16/10 al 31/10/2026)",
+      "estado": "abierto"
+     },
+     {
+      "id": 21,
+      "nombre": "Quincenal 2026-21 (01/11 al 15/11/2026)",
+      "estado": "abierto"
+     },
+     {
+      "id": 22,
+      "nombre": "Quincenal 2026-22 (16/11 al 30/11/2026)",
+      "estado": "abierto"
+     },
+     {
+      "id": 23,
+      "nombre": "Quincenal 2026-23 (01/12 al 15/12/2026)",
+      "estado": "abierto"
+     },
+     {
+      "id": 24,
+      "nombre": "Quincenal 2026-24 (16/12 al 31/12/2026)",
+      "estado": "abierto"
+     }
+    ],
+    "periodo": {
+     "tipo_periodo": "quincenal",
+     "ejercicio": 2026,
+     "numero": 20,
+     "fecha_inicial": "2026-10-16",
+     "fecha_final": "2026-10-31",
+     "fecha_pago": "2026-10-31",
+     "dias_pago": 15,
+     "estado": "abierto",
+     "activo": true,
+     "id": 20,
+     "creado_en": "2026-10-28T20:59:14.615131",
+     "actualizado_en": "2026-10-28T20:59:14.615131",
+     "nombre": "Quincenal 2026-20 (16/10 al 31/10/2026)"
+    },
+    "nomina": {
+     "periodo_id": 20,
+     "tipo": "ordinaria",
+     "estado": "abierta",
+     "fecha_calculo": "2026-10-28T20:59:15.746950",
+     "num_empleados": 3,
+     "total_percepciones": 35200.0,
+     "total_deducciones": 5938.74,
+     "total_neto": 29261.26,
+     "id": 1,
+     "creado_en": "2026-10-28T20:59:15.696935",
+     "actualizado_en": "2026-10-28T20:59:15.747938",
+     "periodo": "Quincenal 2026-20 (16/10 al 31/10/2026)",
+     "tipo_periodo": "quincenal",
+     "num_publicados": 0,
+     "num_firmados": 0
+    },
+    "empleados": [
+     {
+      "empleado_id": 1,
+      "numero_empleado": "E001",
+      "nombre": "Laura Hernández Ruiz",
+      "departamento": "Sistemas",
+      "salario_diario": 650.0,
+      "recibo": {
+       "nomina_id": 1,
+       "empleado_id": 1,
+       "estado": "calculado",
+       "editado": false,
+       "salario_diario": 650.0,
+       "sdi": 686.51,
+       "dias_periodo": 15.0,
+       "dias_pagados": 14.0,
+       "dias_cotizados": 14.0,
+       "faltas": 1,
+       "dias_incapacidad": 0,
+       "dias_vacaciones": 0,
+       "dias_permiso_sin_goce": 0,
+       "total_gravado": 9550.0,
+       "total_exento": 500.0,
+       "total_percepciones": 10050.0,
+       "total_deducciones": 1783.15,
+       "isr_causado": 1205.88,
+       "subsidio_causado": 0.0,
+       "subsidio_aplicado": 0.0,
+       "neto": 8266.85,
+       "publicado_en": null,
+       "firmado_en": null,
+       "id": 1,
+       "creado_en": "2026-10-28T20:59:15.711939",
+       "actualizado_en": "2026-10-28T20:59:15.726946",
+       "empleado": "Laura Hernández Ruiz",
+       "numero_empleado": "E001",
+       "periodo": "Quincenal 2026-20 (16/10 al 31/10/2026)",
+       "periodo_id": 20,
+       "tipo_nomina": "ordinaria",
+       "fecha_pago": "2026-10-31",
+       "editable": true,
+       "aclaraciones_pendientes": 0,
+       "firmado": false
+      }
+     },
+     {
+      "empleado_id": 3,
+      "numero_empleado": "E003",
+      "nombre": "Carlos Gómez Pérez",
+      "departamento": "Sistemas",
+      "salario_diario": 890.0,
+      "recibo": {
+       "nomina_id": 1,
+       "empleado_id": 3,
+       "estado": "calculado",
+       "editado": false,
+       "salario_diario": 890.0,
+       "sdi": 939.99,
+       "dias_periodo": 15.0,
+       "dias_pagados": 15.0,
+       "dias_cotizados": 15.0,
+       "faltas": 0,
+       "dias_incapacidad": 0,
+       "dias_vacaciones": 0,
+       "dias_permiso_sin_goce": 0,
+       "total_gravado": 13350.0,
+       "total_exento": 500.0,
+       "total_percepciones": 13850.0,
+       "total_deducciones": 2387.7,
+       "isr_causado": 2017.56,
+       "subsidio_causado": 0.0,
+       "subsidio_aplicado": 0.0,
+       "neto": 11462.3,
+       "publicado_en": null,
+       "firmado_en": null,
+       "id": 2,
+       "creado_en": "2026-10-28T20:59:15.733941",
+       "actualizado_en": "2026-10-28T20:59:15.738949",
+       "empleado": "Carlos Gómez Pérez",
+       "numero_empleado": "E003",
+       "periodo": "Quincenal 2026-20 (16/10 al 31/10/2026)",
+       "periodo_id": 20,
+       "tipo_nomina": "ordinaria",
+       "fecha_pago": "2026-10-31",
+       "editable": true,
+       "aclaraciones_pendientes": 0,
+       "firmado": false
+      }
+     },
+     {
+      "empleado_id": 4,
+      "numero_empleado": "E004",
+      "nombre": "Ana Martínez López",
+      "departamento": "Recursos Humanos",
+      "salario_diario": 720.0,
+      "recibo": {
+       "nomina_id": 1,
+       "empleado_id": 4,
+       "estado": "calculado",
+       "editado": false,
+       "salario_diario": 720.0,
+       "sdi": 759.45,
+       "dias_periodo": 15.0,
+       "dias_pagados": 15.0,
+       "dias_cotizados": 15.0,
+       "faltas": 0,
+       "dias_incapacidad": 0,
+       "dias_vacaciones": 0,
+       "dias_permiso_sin_goce": 0,
+       "total_gravado": 10800.0,
+       "total_exento": 500.0,
+       "total_percepciones": 11300.0,
+       "total_deducciones": 1767.89,
+       "isr_causado": 1472.88,
+       "subsidio_causado": 0.0,
+       "subsidio_aplicado": 0.0,
+       "neto": 9532.11,
+       "publicado_en": null,
+       "firmado_en": null,
+       "id": 3,
+       "creado_en": "2026-10-28T20:59:15.741941",
+       "actualizado_en": "2026-10-28T20:59:15.747938",
+       "empleado": "Ana Martínez López",
+       "numero_empleado": "E004",
+       "periodo": "Quincenal 2026-20 (16/10 al 31/10/2026)",
+       "periodo_id": 20,
+       "tipo_nomina": "ordinaria",
+       "fecha_pago": "2026-10-31",
+       "editable": true,
+       "aclaraciones_pendientes": 0,
+       "firmado": false
+      }
+     }
+    ],
+    "parametros": {
+     "ejercicio": 2026,
+     "uma_diaria": 117.31,
+     "salario_minimo": 315.04,
+     "subsidio_mensual": 492.14
+    }
+   }
+  }
+ },
+ "empleado": {
+  "/api/opciones": {
+   "periodicidades": [
+    {
+     "valor": "semanal",
+     "nombre": "Semanal"
+    },
+    {
+     "valor": "catorcenal",
+     "nombre": "Catorcenal"
+    },
+    {
+     "valor": "quincenal",
+     "nombre": "Quincenal"
+    },
+    {
+     "valor": "mensual",
+     "nombre": "Mensual"
+    }
+   ],
+   "tipos_calculo": [
+    {
+     "valor": "importe",
+     "nombre": "Importe fijo"
+    },
+    {
+     "valor": "porcentaje",
+     "nombre": "Porcentaje"
+    },
+    {
+     "valor": "horas_extra",
+     "nombre": "Horas extra (dobles)"
+    }
+   ],
+   "tipos_concepto": [
+    {
+     "valor": "percepcion",
+     "nombre": "Percepción"
+    },
+    {
+     "valor": "deduccion",
+     "nombre": "Deducción"
+    }
+   ],
+   "fracciones_art110": [
+    {
+     "valor": "I",
+     "nombre": "I · Deudas con el patrón (anticipos, préstamos, pagos en exceso)"
+    },
+    {
+     "valor": "II",
+     "nombre": "II · Renta de habitación (art. 151)"
+    },
+    {
+     "valor": "III",
+     "nombre": "III · Crédito Infonavit"
+    },
+    {
+     "valor": "IV",
+     "nombre": "IV · Cajas de ahorro y cooperativas"
+    },
+    {
+     "valor": "V",
+     "nombre": "V · Pensión alimenticia (orden judicial)"
+    },
+    {
+     "valor": "VI",
+     "nombre": "VI · Cuotas sindicales"
+    },
+    {
+     "valor": "VII",
+     "nombre": "VII · Crédito Fonacot"
+    }
+   ],
+   "tipos_descuento_infonavit": [
+    {
+     "valor": "porcentaje",
+     "nombre": "Porcentaje del SBC"
+    },
+    {
+     "valor": "cuota_fija",
+     "nombre": "Cuota fija mensual"
+    },
+    {
+     "valor": "factor_uma",
+     "nombre": "Factor de descuento (veces UMA)"
+    }
+   ],
+   "tipos_solicitud": [
+    {
+     "valor": "vacaciones",
+     "nombre": "Vacaciones"
+    },
+    {
+     "valor": "permiso_con_goce",
+     "nombre": "Permiso con goce"
+    },
+    {
+     "valor": "permiso_sin_goce",
+     "nombre": "Permiso sin goce"
+    }
+   ],
+   "tipos_incidencia": [
+    {
+     "valor": "falta",
+     "nombre": "Falta"
+    },
+    {
+     "valor": "incapacidad",
+     "nombre": "Incapacidad"
+    }
+   ],
+   "tipos_incapacidad": [
+    {
+     "valor": "01",
+     "nombre": "Riesgo de trabajo"
+    },
+    {
+     "valor": "02",
+     "nombre": "Enfermedad en general"
+    },
+    {
+     "valor": "03",
+     "nombre": "Maternidad"
+    }
+   ],
+   "zonas_salario": [
+    {
+     "valor": "general",
+     "nombre": "General"
+    },
+    {
+     "valor": "frontera",
+     "nombre": "Zona libre de la frontera norte"
+    }
+   ],
+   "tipos_nomina": [
+    {
+     "valor": "ordinaria",
+     "nombre": "Ordinaria"
+    },
+    {
+     "valor": "aguinaldo",
+     "nombre": "Aguinaldo"
+    }
+   ]
+  },
+  "/api/tablero": {
+   "usuario": "lhernandez",
+   "rol": "Empleado",
+   "recibos_por_firmar": 1
+  },
+  "/api/portal/perfil": {
+   "numero_empleado": "E001",
+   "nombre": "Laura",
+   "apellido_paterno": "Hernández",
+   "apellido_materno": "Ruiz",
+   "rfc": null,
+   "curp": null,
+   "nss": null,
+   "email": null,
+   "telefono": null,
+   "puesto": "Analista",
+   "departamento_id": 1,
+   "horario_id": 1,
+   "fecha_ingreso": "2021-03-01",
+   "fecha_baja": null,
+   "periodicidad_pago": "quincenal",
+   "salario_diario": 650.0,
+   "sdi": null,
+   "usuario_id": 3,
+   "activo": true,
+   "id": 1,
+   "creado_en": "2026-10-28T20:59:15.400882",
+   "actualizado_en": "2026-10-28T20:59:15.400882",
+   "nombre_completo": "Laura Hernández Ruiz",
+   "departamento": "Sistemas",
+   "horario": "Matutino (08:00 - 16:00)",
+   "usuario": "lhernandez",
+   "tiene_pin": true,
+   "saldo_vacaciones": {
+    "anios_servicio": 5,
+    "inicio_periodo": "2026-03-01",
+    "proximo_aniversario": "2027-03-01",
+    "dias_derecho": 20,
+    "dias_tomados": 0,
+    "dias_pendientes": 0,
+    "dias_disponibles": 20
+   }
+  },
+  "/api/portal/recibos": {
+   "items": [
+    {
+     "nomina_id": 1,
+     "empleado_id": 1,
+     "estado": "publicado",
+     "editado": false,
+     "salario_diario": 650.0,
+     "sdi": 686.51,
+     "dias_periodo": 15.0,
+     "dias_pagados": 14.0,
+     "dias_cotizados": 14.0,
+     "faltas": 1,
+     "dias_incapacidad": 0,
+     "dias_vacaciones": 0,
+     "dias_permiso_sin_goce": 0,
+     "total_gravado": 9550.0,
+     "total_exento": 500.0,
+     "total_percepciones": 10050.0,
+     "total_deducciones": 1783.15,
+     "isr_causado": 1205.88,
+     "subsidio_causado": 0.0,
+     "subsidio_aplicado": 0.0,
+     "neto": 8266.85,
+     "publicado_en": "2026-10-28T20:59:15.763947",
+     "firmado_en": null,
+     "id": 1,
+     "creado_en": "2026-10-28T20:59:15.711939",
+     "actualizado_en": "2026-10-28T20:59:15.764941",
+     "empleado": "Laura Hernández Ruiz",
+     "numero_empleado": "E001",
+     "periodo": "Quincenal 2026-20 (16/10 al 31/10/2026)",
+     "periodo_id": 20,
+     "tipo_nomina": "ordinaria",
+     "fecha_pago": "2026-10-31",
+     "editable": true,
+     "aclaraciones_pendientes": 1,
+     "firmado": false
+    }
+   ],
+   "total": 1
+  },
+  "/api/portal/recibos/1": {
+   "nomina_id": 1,
+   "empleado_id": 1,
+   "estado": "publicado",
+   "editado": false,
+   "salario_diario": 650.0,
+   "sdi": 686.51,
+   "dias_periodo": 15.0,
+   "dias_pagados": 14.0,
+   "dias_cotizados": 14.0,
+   "faltas": 1,
+   "dias_incapacidad": 0,
+   "dias_vacaciones": 0,
+   "dias_permiso_sin_goce": 0,
+   "total_gravado": 9550.0,
+   "total_exento": 500.0,
+   "total_percepciones": 10050.0,
+   "total_deducciones": 1783.15,
+   "isr_causado": 1205.88,
+   "subsidio_causado": 0.0,
+   "subsidio_aplicado": 0.0,
+   "neto": 8266.85,
+   "publicado_en": "2026-10-28T20:59:15.763947",
+   "firmado_en": null,
+   "id": 1,
+   "creado_en": "2026-10-28T20:59:15.711939",
+   "actualizado_en": "2026-10-28T20:59:15.764941",
+   "empleado": "Laura Hernández Ruiz",
+   "numero_empleado": "E001",
+   "periodo": "Quincenal 2026-20 (16/10 al 31/10/2026)",
+   "periodo_id": 20,
+   "tipo_nomina": "ordinaria",
+   "fecha_pago": "2026-10-31",
+   "editable": true,
+   "aclaraciones_pendientes": 1,
+   "firmado": false,
+   "departamento": "Sistemas",
+   "percepciones": [
+    {
+     "recibo_id": 1,
+     "concepto_id": 1,
+     "codigo": "SUELDO",
+     "tipo": "percepcion",
+     "clave": "P001",
+     "clave_sat": "001",
+     "nombre": "Sueldo",
+     "cantidad": 14.0,
+     "gravado": 9100.0,
+     "exento": 0.0,
+     "importe": 9100.0,
+     "id": 1
+    },
+    {
+     "recibo_id": 1,
+     "concepto_id": 8,
+     "codigo": null,
+     "tipo": "percepcion",
+     "clave": "P008",
+     "clave_sat": "049",
+     "nombre": "Premio de asistencia",
+     "cantidad": 1.0,
+     "gravado": 450.0,
+     "exento": 0.0,
+     "importe": 450.0,
+     "id": 2
+    },
+    {
+     "recibo_id": 1,
+     "concepto_id": 9,
+     "codigo": null,
+     "tipo": "percepcion",
+     "clave": "P009",
+     "clave_sat": "029",
+     "nombre": "Vales de despensa",
+     "cantidad": 1.0,
+     "gravado": 0.0,
+     "exento": 500.0,
+     "importe": 500.0,
+     "id": 3
+    }
+   ],
+   "deducciones": [
+    {
+     "recibo_id": 1,
+     "concepto_id": 10,
+     "codigo": "ISR",
+     "tipo": "deduccion",
+     "clave": "D001",
+     "clave_sat": "002",
+     "nombre": "ISR",
+     "cantidad": 1.0,
+     "gravado": 0.0,
+     "exento": 0.0,
+     "importe": 1205.88,
+     "id": 4
+    },
+    {
+     "recibo_id": 1,
+     "concepto_id": 11,
+     "codigo": "IMSS",
+     "tipo": "deduccion",
+     "clave": "D002",
+     "clave_sat": "001",
+     "nombre": "Cuotas IMSS",
+     "cantidad": 14.0,
+     "gravado": 0.0,
+     "exento": 0.0,
+     "importe": 247.01,
+     "id": 5
+    },
+    {
+     "recibo_id": 1,
+     "concepto_id": 12,
+     "codigo": "INFONAVIT",
+     "tipo": "deduccion",
+     "clave": "D003",
+     "clave_sat": "010",
+     "nombre": "Crédito Infonavit",
+     "cantidad": 14.0,
+     "gravado": 0.0,
+     "exento": 0.0,
+     "importe": 230.26,
+     "id": 6
+    },
+    {
+     "recibo_id": 1,
+     "concepto_id": 13,
+     "codigo": null,
+     "tipo": "deduccion",
+     "clave": "D004",
+     "clave_sat": "004",
+     "nombre": "Préstamo de la empresa",
+     "cantidad": 1.0,
+     "gravado": 0.0,
+     "exento": 0.0,
+     "importe": 100.0,
+     "id": 7
+    }
+   ],
+   "aclaraciones": [
+    {
+     "recibo_id": 1,
+     "mensaje": "No veo mi bono de asistencia en este periodo.",
+     "estado": "pendiente",
+     "respuesta": null,
+     "atendida_por_id": null,
+     "atendida_en": null,
+     "id": 1,
+     "creado_en": "2026-10-28T20:59:15.781946",
+     "actualizado_en": "2026-10-28T20:59:15.781946",
+     "empleado": "Laura Hernández Ruiz",
+     "periodo": "Quincenal 2026-20 (16/10 al 31/10/2026)",
+     "neto": 8266.85,
+     "atendida_por": null
+    }
+   ]
+  },
+  "/api/portal/solicitudes": {
+   "items": [
+    {
+     "empleado_id": 1,
+     "tipo": "permiso_con_goce",
+     "fecha_inicial": "2027-03-02",
+     "fecha_final": "2027-03-02",
+     "dias": 1,
+     "motivo": "Trámite",
+     "estado": "pendiente",
+     "comentario_resolucion": null,
+     "resuelto_por_id": null,
+     "resuelto_en": null,
+     "id": 1,
+     "creado_en": "2026-10-28T20:59:15.688397",
+     "actualizado_en": "2026-10-28T20:59:15.688397",
+     "empleado": "Laura Hernández Ruiz",
+     "tipo_nombre": "Permiso con goce",
+     "resuelto_por": null
+    }
+   ],
+   "total": 1
+  },
+  "POST /api/auth/login": {
+   "access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc5MzIyMTE1NSwianRpIjoiZDMxNmFhN2QtNjgxZC00NDA5LWJmMzctZjZjYzllMmE2ODM2IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjMiLCJuYmYiOjE3OTMyMjExNTUsImNzcmYiOiI2MWMzNTc4NC1jYjRlLTRlNjItYmQzZS1mMTg2NmIxMWM5OWUiLCJleHAiOjE3OTMyNDk5NTV9.tNqqlyxnFiOzMGE0Ar-acU3J09SffWuiDNaCuX5Bors",
+   "usuario": {
+    "nombre_usuario": "lhernandez",
+    "rol_id": 4,
+    "activo": true,
+    "solicita_restablecer": false,
+    "ultimo_acceso": "2026-10-28T20:59:15.631369",
+    "id": 3,
+    "creado_en": "2026-10-28T20:59:15.398886",
+    "actualizado_en": "2026-10-28T20:59:15.631369",
+    "rol": "Empleado",
+    "empleado_id": 1,
+    "empleado": "Laura Hernández Ruiz",
+    "privilegios": [
+     "portal"
+    ]
+   }
+  }
+ }
+}
